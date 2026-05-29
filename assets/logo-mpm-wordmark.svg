@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" fill="none">
+  
+  <g font-family="Cormorant Garamond, Garamond, serif" fill="#111111">
+    <text x="120" y="44" font-size="46" font-weight="300" letter-spacing="6" text-anchor="middle">MPM</text>
+    <text x="120" y="64" font-family="Inter, sans-serif" font-size="7" font-weight="500" letter-spacing="3.6" text-anchor="middle" fill="#5A5A5A">MYKONOS · PRECIOUS · MOMENTS</text>
+  </g>
+  
+  <line x1="100" y1="52" x2="140" y2="52" stroke="#C5A059" stroke-width="0.6"></line>
+</svg>
