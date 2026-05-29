@@ -1,0 +1,221 @@
+/* ============================================================
+   MPM · Motion layer
+   Restrained luxury: slow, ease-out, never bouncy.
+   All entrance animations use keyframes so the hidden state is
+   guaranteed to render before the animation runs.
+   ============================================================ */
+
+html { scroll-behavior: smooth; }
+
+/* ------------------------------------------------------------
+   Keyframes
+   ------------------------------------------------------------ */
+@keyframes mpm-rise {
+  from { opacity: 0; transform: translate3d(0, 32px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes mpm-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes mpm-draw {
+  from { opacity: 0; transform: scaleX(0); }
+  to   { opacity: 1; transform: scaleX(1); }
+}
+@keyframes mpm-text-clip {
+  0%   { clip-path: inset(0 0 100% 0); opacity: 0; }
+  20%  { opacity: 1; }
+  100% { clip-path: inset(0 0 0 0);   opacity: 1; }
+}
+@keyframes mpm-bg-in {
+  from { opacity: 0; transform: scale(1.14); }
+  to   { opacity: 1; transform: scale(1.04); }
+}
+@keyframes mpm-scrim-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes mpm-burns {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.10) translate3d(0, -1.5%, 0); }
+}
+@keyframes mpm-hint {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50%      { transform: translateY(6px); opacity: 1; }
+}
+@keyframes mpm-body-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ------------------------------------------------------------
+   Page arrival — short body fade-in to cover FOUC on load
+   ------------------------------------------------------------ */
+body { animation: mpm-body-in 500ms var(--ease-luxe) both; }
+
+/* ------------------------------------------------------------
+   Hero / page-header — cinematic load sequence
+   ------------------------------------------------------------ */
+
+/* Background: starts blurred-and-zoomed, settles to scale 1.04, then
+   ken-burns drifts forever. */
+.hero .bg,
+.page-header .bg {
+  opacity: 0;
+  transform: scale(1.14);
+  animation:
+    mpm-bg-in 1600ms var(--ease-luxe) 80ms forwards,
+    mpm-burns 24s ease-in-out 1700ms infinite alternate;
+}
+
+/* Scrim fades in slowly so the photo is briefly fully visible */
+.hero .scrim,
+.page-header .scrim {
+  opacity: 0;
+  animation: mpm-scrim-in 1800ms var(--ease-luxe) 220ms forwards;
+}
+
+/* All hero content children — hidden at first paint */
+.hero .content > *,
+.page-header .content > * {
+  opacity: 0;
+}
+
+/* Eyebrow / lead / actions — rise + fade */
+.hero .content > *:not(h1):not(.rule-gold),
+.page-header .content > *:not(h1):not(.rule-gold) {
+  animation: mpm-rise 1100ms var(--ease-luxe) forwards;
+}
+
+/* Rule-gold inside hero/page-header — draws horizontally */
+.hero .content > .rule-gold,
+.page-header .content > .rule-gold {
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: mpm-draw 900ms var(--ease-luxe) forwards;
+}
+
+/* H1 — clip-path reveal (text mask wipes down) */
+.hero h1,
+.page-header h1 {
+  clip-path: inset(0 0 100% 0);
+  animation: mpm-text-clip 1300ms var(--ease-luxe) forwards;
+}
+
+/* Stagger by position. nth-child(n) maps to:
+   1 = eyebrow, 2 = rule-gold, 3 = h1, 4 = lead, 5 = actions */
+.hero .content > *:nth-child(1),
+.page-header .content > *:nth-child(1) { animation-delay: 380ms; }
+.hero .content > *:nth-child(2),
+.page-header .content > *:nth-child(2) { animation-delay: 560ms; }
+.hero .content > *:nth-child(3),
+.page-header .content > *:nth-child(3) { animation-delay: 720ms; }
+.hero .content > *:nth-child(4),
+.page-header .content > *:nth-child(4) { animation-delay: 1400ms; }
+.hero .content > *:nth-child(5),
+.page-header .content > *:nth-child(5) { animation-delay: 1620ms; }
+
+/* Scroll-hint pulse (sits outside .content) */
+.hero .scroll-hint {
+  opacity: 0;
+  animation:
+    mpm-fade 800ms var(--ease-luxe) 1900ms forwards,
+    mpm-hint 2.6s var(--ease-luxe) 2700ms infinite;
+}
+
+/* ------------------------------------------------------------
+   Scroll-reveal — keyframe-based (not transition) so the
+   hidden state is guaranteed before the animation runs.
+   ------------------------------------------------------------ */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  animation: mpm-rise 1000ms var(--ease-luxe) forwards;
+}
+
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translate3d(0, 32px, 0);
+  will-change: opacity, transform;
+}
+.reveal-stagger.is-visible > * {
+  animation: mpm-rise 900ms var(--ease-luxe) forwards;
+}
+.reveal-stagger.is-visible > *:nth-child(1)  { animation-delay:   0ms; }
+.reveal-stagger.is-visible > *:nth-child(2)  { animation-delay:  90ms; }
+.reveal-stagger.is-visible > *:nth-child(3)  { animation-delay: 180ms; }
+.reveal-stagger.is-visible > *:nth-child(4)  { animation-delay: 270ms; }
+.reveal-stagger.is-visible > *:nth-child(5)  { animation-delay: 360ms; }
+.reveal-stagger.is-visible > *:nth-child(6)  { animation-delay: 450ms; }
+.reveal-stagger.is-visible > *:nth-child(7)  { animation-delay: 540ms; }
+.reveal-stagger.is-visible > *:nth-child(8)  { animation-delay: 630ms; }
+.reveal-stagger.is-visible > *:nth-child(9)  { animation-delay: 720ms; }
+.reveal-stagger.is-visible > *:nth-child(10) { animation-delay: 810ms; }
+.reveal-stagger.is-visible > *:nth-child(11) { animation-delay: 900ms; }
+.reveal-stagger.is-visible > *:nth-child(12) { animation-delay: 990ms; }
+.reveal-stagger.is-visible > *:nth-child(n+13) { animation-delay: 1080ms; }
+
+/* Rule-gold inside revealed sections — draws when parent reveals */
+.reveal .rule-gold,
+.reveal-stagger .rule-gold {
+  transform-origin: left center;
+  transform: scaleX(0);
+  opacity: 0;
+}
+.reveal.is-visible .rule-gold,
+.reveal-stagger.is-visible .rule-gold {
+  animation: mpm-draw 900ms var(--ease-luxe) 220ms forwards;
+}
+.rule-gold.center { transform-origin: center; }
+.reveal .rule-gold.center,
+.reveal-stagger .rule-gold.center { transform-origin: center; }
+
+/* ------------------------------------------------------------
+   Hover micro-interactions
+   ------------------------------------------------------------ */
+.service-tile, .fleet-card, .loc-card, .team-card {
+  transition: transform var(--dur-base) var(--ease-luxe), border-color var(--dur-base) var(--ease-luxe);
+}
+.service-tile:hover, .fleet-card:hover, .loc-card:hover, .team-card:hover {
+  transform: translateY(-4px);
+}
+
+/* CTA buttons — subtle gold sweep on hover */
+.btn { position: relative; overflow: hidden; isolation: isolate; }
+.btn::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.18) 50%, transparent 100%);
+  transform: translateX(-110%);
+  transition: transform 700ms var(--ease-luxe);
+  pointer-events: none;
+  z-index: -1;
+}
+.btn:hover::after { transform: translateX(110%); }
+
+/* Counter span — no special animation, value is JS-driven */
+.counter-num { display: inline-block; }
+
+/* ------------------------------------------------------------
+   Reduced motion — neutralise everything
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+  }
+  .reveal, .reveal-stagger > * { opacity: 1; transform: none; }
+  .hero .content > *, .page-header .content > * { opacity: 1; }
+  .hero h1, .page-header h1 { clip-path: none; }
+  .hero .bg, .page-header .bg { opacity: 1; transform: scale(1.04); animation: none; }
+  .hero .scrim, .page-header .scrim { opacity: 1; }
+  .rule-gold { transform: scaleX(1); opacity: 1; }
+}

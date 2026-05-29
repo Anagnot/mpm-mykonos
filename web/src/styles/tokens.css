@@ -1,0 +1,237 @@
+/* ============================================================
+   Mykonos Precious Moments — Design Tokens
+   Luxury VIP Chauffeur & Concierge Services, Mykonos.
+   ============================================================ */
+
+:root {
+  /* ----------------------------------------------------------
+     COLORS — Aegean luxury palette
+     White marble, deep navy/jet, and a single champagne accent.
+     ---------------------------------------------------------- */
+
+  /* Primary surfaces — clean, airy */
+  --color-white:            #FFFFFF;            /* Pure white — primary canvas */
+  --color-marble:           #F9F9F9;            /* Off-white / marble — alt section bg */
+  --color-mist:             #F2F1ED;            /* Warm warm-gray — quiet accent surface */
+
+  /* Premium contrast — dark text & heavy elements */
+  --color-aegean:           #0A192F;            /* Deep Aegean Navy */
+  --color-jet:              #111111;            /* Charcoal / Jet — primary text */
+  --color-graphite:         #2A2A2A;            /* Secondary text */
+  --color-stone:            #5A5A5A;            /* Tertiary text / meta */
+  --color-silver:           #CCCCCC;            /* Hairline / disabled */
+  --color-feather:          #EEEEEE;            /* Subtle dividers */
+
+  /* Accent — the single touch of luxury. Use SPARINGLY. */
+  --color-gold:             #C5A059;            /* Muted Gold — primary accent */
+  --color-gold-bright:      #D4AF37;            /* Champagne — hover / shine */
+  --color-gold-soft:        #E8D8A8;            /* Tinted gold — washes */
+
+  /* System — soft, refined */
+  --color-success:          #6B8E6E;            /* Sage green — confirmation */
+  --color-success-bg:       #EEF3EE;
+  --color-error:            #8C3A3A;            /* Bordeaux — error */
+  --color-error-bg:         #F6ECEC;
+  --color-warn:             #A78448;            /* Amber-gold — caution */
+  --color-warn-bg:          #FAF3E5;
+
+  /* Semantic aliases */
+  --fg-primary:             var(--color-jet);
+  --fg-secondary:           var(--color-graphite);
+  --fg-tertiary:            var(--color-stone);
+  --fg-inverse:             var(--color-white);
+  --fg-accent:              var(--color-gold);
+
+  --bg-primary:             var(--color-white);
+  --bg-alt:                 var(--color-marble);
+  --bg-dark:                var(--color-jet);
+  --bg-deep:                var(--color-aegean);
+
+  --border-hairline:        var(--color-feather);
+  --border-default:         var(--color-silver);
+  --border-strong:          var(--color-jet);
+  --border-accent:          var(--color-gold);
+
+
+  /* ----------------------------------------------------------
+     TYPOGRAPHY — Serif headings, sans body
+     ---------------------------------------------------------- */
+  --font-serif:    'Cormorant Garamond', 'Playfair Display', Garamond, 'Times New Roman', serif;
+  --font-sans:     'Inter', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --font-heading:  var(--font-serif);
+  --font-body:     var(--font-sans);
+
+  /* Type scale — fluid for editorial responsiveness */
+  --text-display:  clamp(3rem,    7vw,   5rem);    /* 48 → 80px  hero */
+  --text-h1:       clamp(2.5rem,  5vw,   4rem);    /* 40 → 64px */
+  --text-h2:       clamp(2rem,    4vw,   3rem);    /* 32 → 48px */
+  --text-h3:       clamp(1.5rem,  3vw,   2.2rem);  /* 24 → 35px */
+  --text-h4:       clamp(1.25rem, 2vw,   1.5rem);  /* 20 → 24px */
+  --text-h5:       1.125rem;                       /* 18px */
+  --text-h6:       1rem;                           /* 16px */
+  --text-large:    1.2rem;                         /* 19px  — intros */
+  --text-body:     1rem;                           /* 16px  — base */
+  --text-small:    0.875rem;                       /* 14px  — labels / footer */
+  --text-xs:       0.75rem;                        /* 12px  — eyebrow / meta */
+
+  /* Weights */
+  --wt-light:      300;
+  --wt-regular:    400;
+  --wt-medium:     500;
+  --wt-semibold:   600;
+  --wt-bold:       700;
+
+  /* Line heights */
+  --leading-tight: 1.1;
+  --leading-snug:  1.25;
+  --leading-body:  1.6;
+  --leading-loose: 1.8;
+
+  /* Letter-spacing — luxury love wide tracking on uppercase */
+  --track-tight:    -0.01em;
+  --track-normal:    0;
+  --track-wide:      0.08em;
+  --track-wider:     0.16em;
+  --track-widest:    0.24em;
+
+
+  /* ----------------------------------------------------------
+     SPACING — Base-8, fluid for sections
+     ---------------------------------------------------------- */
+  --space-xs:  0.5rem;     /*  8px */
+  --space-sm:  1rem;       /* 16px */
+  --space-md:  2rem;       /* 32px */
+  --space-lg:  4rem;       /* 64px */
+  --space-xl:  clamp(4rem, 8vw, 6.25rem);   /* 64 → 100px — section breathing room */
+  --space-2xl: clamp(6rem, 12vw, 9rem);     /* huge editorial gaps */
+
+  /* Layout */
+  --max-content: 1320px;
+  --max-text:    68ch;
+  --gutter:      clamp(1rem, 4vw, 2.5rem);
+
+
+  /* ----------------------------------------------------------
+     RADII — Sharp luxury. Almost no rounding.
+     ---------------------------------------------------------- */
+  --radius-none:  0;
+  --radius-xs:    2px;
+  --radius-sm:    4px;
+  --radius-pill:  999px;   /* reserved for chips / status only */
+
+
+  /* ----------------------------------------------------------
+     SHADOWS — Almost none. Use hairline borders instead.
+     ---------------------------------------------------------- */
+  --shadow-none:    none;
+  --shadow-soft:    0 1px 0 rgba(17, 17, 17, 0.04), 0 12px 32px -16px rgba(17, 17, 17, 0.10);
+  --shadow-lift:    0 20px 60px -24px rgba(10, 25, 47, 0.18);
+  --shadow-modal:   0 40px 80px -20px rgba(10, 25, 47, 0.28);
+
+
+  /* ----------------------------------------------------------
+     MOTION — slow, cubic-bezier, never bouncy
+     ---------------------------------------------------------- */
+  --ease-luxe:   cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-quick:   200ms;
+  --dur-base:    400ms;
+  --dur-slow:    700ms;
+
+  --transition-base: all var(--dur-base) var(--ease-luxe);
+
+
+  /* ----------------------------------------------------------
+     Z-INDEX
+     ---------------------------------------------------------- */
+  --z-nav:     50;
+  --z-overlay: 80;
+  --z-modal:   100;
+  --z-toast:   120;
+}
+
+/* ============================================================
+   SEMANTIC ELEMENT STYLES — opt in via class on the root if needed
+   ============================================================ */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--fg-primary);
+  background: var(--bg-primary);
+  font-weight: var(--wt-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--wt-light);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--track-tight);
+  color: var(--fg-primary);
+  margin: 0;
+}
+h1 { font-size: var(--text-h1); }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+h4 { font-size: var(--text-h4); }
+h5, h6 {
+  font-family: var(--font-body);
+  font-weight: var(--wt-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--track-wider);
+  margin: 0;
+}
+h5 { font-size: var(--text-h5); }
+h6 { font-size: var(--text-h6); }
+
+p {
+  margin: 0;
+  max-width: var(--max-text);
+}
+.lead {
+  font-size: var(--text-large);
+  font-weight: var(--wt-light);
+  color: var(--fg-secondary);
+}
+
+/* Editorial eyebrow — used above many luxury headings */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: var(--wt-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--track-widest);
+  color: var(--fg-accent);
+}
+
+/* Luxury text link */
+a.link-luxe {
+  color: var(--fg-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: var(--track-wider);
+  font-size: var(--text-xs);
+  font-weight: var(--wt-medium);
+  position: relative;
+  padding-bottom: 4px;
+  transition: var(--transition-base);
+}
+a.link-luxe::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 24px; height: 1px;
+  background: var(--color-gold);
+  transition: width var(--dur-base) var(--ease-luxe);
+}
+a.link-luxe:hover::after { width: 100%; }
+
+/* Utilities */
+.heading-serif { font-family: var(--font-heading); font-weight: var(--wt-light); }
+.text-mono-track { letter-spacing: var(--track-wider); text-transform: uppercase; }
+.section-spacing { padding: var(--space-xl) var(--gutter); }
+.divider-hair { height: 1px; background: var(--border-hairline); width: 100%; }
+.divider-gold { height: 1px; background: var(--color-gold); width: 48px; }

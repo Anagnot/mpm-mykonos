@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  
+  <circle cx="60" cy="60" r="54" stroke="#C5A059" stroke-width="0.6" fill="none"></circle>
+  <circle cx="60" cy="60" r="50" stroke="#C5A059" stroke-width="0.3" fill="none" opacity="0.45"></circle>
+  <text x="60" y="68" font-family="Cormorant Garamond, Garamond, serif" font-size="34" font-weight="400" letter-spacing="2.5" fill="#111111" text-anchor="middle">MPM</text>
+  <line x1="48" y1="78" x2="72" y2="78" stroke="#C5A059" stroke-width="0.5"></line>
+  <text x="60" y="90" font-family="Inter, sans-serif" font-size="4.5" font-weight="500" letter-spacing="2.8" text-anchor="middle" fill="#5A5A5A">EST · MYKONOS</text>
+</svg>
