@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
-import BookingForm from "@/components/BookingForm";
+import TallyForm from "@/components/TallyForm";
 import { PageHeader } from "@/components/ui";
 import { getDictionary, hasLocale } from "../dictionaries";
 
@@ -24,15 +23,16 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=2400&q=80"
+        bg="https://images.unsplash.com/photo-1609521247503-8de40462e427?w=2400&q=80"
         minHeight="50vh"
       />
 
       <section className="section">
         <div className="container" style={{ maxWidth: 1080 }}>
-          <Suspense fallback={null}>
-            <BookingForm lang={lang} dict={dict.form} />
-          </Suspense>
+          <TallyForm
+            src="https://tally.so/embed/wgb1bP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            title="Request transportation"
+          />
         </div>
       </section>
 

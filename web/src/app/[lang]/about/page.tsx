@@ -23,15 +23,15 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?w=2400&q=80"
+        bg="https://images.unsplash.com/photo-1522255272218-7ac5249be344?w=2400&q=80"
       />
 
       <section className="section reveal">
         <div className="container">
           <div className="about-grid">
             <div className="img-stack">
-              <img className="a" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1400&q=80" alt={dict.story.imgAlt1} />
-              <img className="b" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=900&q=80" alt={dict.story.imgAlt2} />
+              <img className="a" src="https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=1400&q=80" alt={dict.story.imgAlt1} />
+              <img className="b" src="https://images.unsplash.com/photo-1724479839764-65981526641d?w=900&q=80" alt={dict.story.imgAlt2} />
             </div>
             <div>
               <Eyebrow>{dict.story.eyebrow}</Eyebrow>

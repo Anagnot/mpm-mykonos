@@ -17,7 +17,7 @@ export default async function PrivateChauffeurPage({ params }: { params: Promise
   return (
     <ServiceDetailLayout
       lang={lang}
-      bg="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=2400&q=80"
+      bg="https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=2400&q=80"
       header={d.header}
       intro={d.intro}
       row1={d.row1}

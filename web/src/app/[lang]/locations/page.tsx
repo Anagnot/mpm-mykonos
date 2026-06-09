@@ -38,7 +38,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ lang
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1564594985645-4427056e22e2?w=2400&q=80"
+        bg="https://images.unsplash.com/photo-1562281302-809108fd533c?w=2400&q=80"
       />
 
       <section className="section reveal">

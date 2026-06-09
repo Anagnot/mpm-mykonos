@@ -17,7 +17,7 @@ export default async function AirTransfersPage({ params }: { params: Promise<{ l
   return (
     <ServiceDetailLayout
       lang={lang}
-      bg="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=2400&q=80"
+      bg="https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?w=2400&q=80"
       header={d.header}
       intro={d.intro}
       row1={d.row1}

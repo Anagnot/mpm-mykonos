@@ -17,7 +17,7 @@ export default async function SeaTransfersPage({ params }: { params: Promise<{ l
   return (
     <ServiceDetailLayout
       lang={lang}
-      bg="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=2400&q=80"
+      bg="https://images.unsplash.com/photo-1562281302-809108fd533c?w=2400&q=80"
       header={d.header}
       intro={d.intro}
       row1={d.row1}

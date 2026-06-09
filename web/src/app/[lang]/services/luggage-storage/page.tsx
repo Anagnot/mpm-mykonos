@@ -17,7 +17,7 @@ export default async function LuggageStoragePage({ params }: { params: Promise<{
   return (
     <ServiceDetailLayout
       lang={lang}
-      bg="https://images.unsplash.com/photo-1571687949921-1306bfb24b72?w=2400&q=80"
+      bg="https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=2400&q=80"
       header={d.header}
       intro={d.intro}
       row1={d.row1}

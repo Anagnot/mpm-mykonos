@@ -26,7 +26,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=2400&q=80"
+        bg="https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=2400&q=80"
         minHeight="50vh"
       />
 
@@ -82,7 +82,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
           </div>
           <div style={{ marginTop: "var(--space-lg)", aspectRatio: "21 / 9", overflow: "hidden", border: "1px solid var(--border-hairline)" }}>
             <img
-              src="https://images.unsplash.com/photo-1564594985645-4427056e22e2?w=2400&q=80"
+              src="https://images.unsplash.com/photo-1724479839764-65981526641d?w=2400&q=80"
               alt={dict.map.alt}
               style={{ width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(0.15) contrast(1.02)" }}
             />
