@@ -268,16 +268,6 @@
         }
       ]
     },
-    "team": {
-      "eyebrow": "The team",
-      "title": "The people who pick up<br />your phone calls.",
-      "lead": "A small house — twelve chauffeurs, two captains, and three concierges. Every one of them is on a first-name basis with most of our regular guests.",
-      "items": [
-        { "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80", "role": "Founder · Lead chauffeur", "name": "Alexandros Mavros", "bio": "Fifteen years driving diplomatic and yacht clientele on Mykonos before founding MPM in 2018." },
-        { "img": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80", "role": "Head of concierge", "name": "Eleni Vasilakis", "bio": "The voice on the phone when you call. Speaks Greek, English, French, and a little Italian." },
-        { "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80", "role": "Captain · Sea transfers", "name": "Captain Dimitris", "bio": "Twenty years in Cycladic waters. Knows every quiet cove between Delos and Rinia." }
-      ]
-    },
     "testimonial": {
       "eyebrow": "A Note From a Guest",
       "quote": "A standard so consistent it feels invisible — which is exactly the point.",

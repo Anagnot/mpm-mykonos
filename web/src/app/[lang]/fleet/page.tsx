@@ -14,7 +14,25 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 type Card = { id: string; img: string; badge: string; name: string; specs: Array<[string | null, string]> };
 type Row = { id: string; tag: string; title: string; body: string; specs: Array<[string, string]>; img: string };
 
-function FleetRow({ row }: { row: Row }) {
+// Extra photos per vehicle (not translatable, so kept out of the dictionaries).
+// The row's lead image is shown large above; these fill the gallery beneath it.
+const FLEET_GALLERY: Record<string, string[]> = {
+  vito: [
+    "/uploads/fleet/vito.jpg",
+    "/uploads/fleet/vito-boot.jpg",
+    "/uploads/fleet/vito-exterior-2.jpg",
+  ],
+  sprinter: [
+    "/uploads/fleet/sprinter.jpg",
+    "/uploads/fleet/sprinter-scenic.jpg",
+    "/uploads/fleet/sprinter-interior-blue.jpg",
+    "/uploads/fleet/sprinter-interior-tan.jpg",
+    "/uploads/fleet/sprinter-night.jpg",
+    "/uploads/fleet/sprinter-mykonos.jpg",
+  ],
+};
+
+function FleetRow({ row, gallery }: { row: Row; gallery?: string[] }) {
   return (
     <div className="fleet-row" id={row.id}>
       <div className="fleet-row-text">
@@ -28,6 +46,15 @@ function FleetRow({ row }: { row: Row }) {
         </div>
       </div>
       <div className="fleet-row-img"><img src={row.img} alt="" /></div>
+      {gallery && gallery.length > 0 && (
+        <div className="fleet-row-gallery">
+          {gallery.map((src) => (
+            <a key={src} className="shot" href={src} target="_blank" rel="noopener noreferrer">
+              <img src={src} alt={`${row.title} — photo`} loading="lazy" />
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
@@ -82,7 +109,7 @@ export default async function FleetPage({ params }: { params: Promise<{ lang: st
       <section className="section alt reveal">
         <div className="container">
           <RichText as="h2" className="title-h2" html={dict.carsTitle} style={{ marginBottom: "var(--space-md)" }} />
-          {(dict.carRows as Row[]).map((r) => <FleetRow key={r.id} row={r} />)}
+          {(dict.carRows as Row[]).map((r) => <FleetRow key={r.id} row={r} gallery={FLEET_GALLERY[r.id]} />)}
         </div>
       </section>
 
