@@ -17,7 +17,7 @@ export default async function OnDisposalDriverPage({ params }: { params: Promise
   return (
     <ServiceDetailLayout
       lang={lang}
-      bg="https://images.unsplash.com/photo-1724479839764-65981526641d?w=2400&q=80"
+      bg="/uploads/site/van-sea-yacht.jpg"
       header={d.header}
       intro={d.intro}
       row1={d.row1}

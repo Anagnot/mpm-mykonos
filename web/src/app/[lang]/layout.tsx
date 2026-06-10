@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageAnimations from "@/components/PageAnimations";
+import BackToTop from "@/components/BackToTop";
+import CookieConsent from "@/components/CookieConsent";
 import { getDictionary, hasLocale, locales } from "./dictionaries";
 import "../globals.css";
 
@@ -42,6 +44,8 @@ export default async function RootLayout({
         <Header lang={lang} dict={dict.header} />
         {children}
         <Footer lang={lang} dict={dict.footer} />
+        <BackToTop label={dict.backToTop} />
+        <CookieConsent dict={dict.cookies} />
         <PageAnimations />
       </body>
     </html>

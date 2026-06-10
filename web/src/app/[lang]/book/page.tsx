@@ -23,7 +23,7 @@ export default async function BookPage({ params }: { params: Promise<{ lang: str
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1609521247503-8de40462e427?w=2400&q=80"
+        bg="/uploads/site/chora-mykonos.jpg"
         minHeight="50vh"
       />
 

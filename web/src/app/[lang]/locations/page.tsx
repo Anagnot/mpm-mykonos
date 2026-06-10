@@ -12,17 +12,24 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 type LocCard = { id: string; img: string; tag: string; title: string; body: string; fromK: string; fromV: string };
 
-function LocCardEl({ c }: { c: LocCard }) {
+function LocCardEl({ c, bookHref, quoteLabel }: { c: LocCard; bookHref: string; quoteLabel: string }) {
   return (
-    <a className="loc-card" href="#" id={c.id}>
+    <article className="loc-card" id={c.id}>
       <div className="img-wrap"><img src={c.img} alt="" /></div>
       <div className="body">
         <span className="eyebrow-sm">{c.tag}</span>
         <h4>{c.title}</h4>
         <p>{c.body}</p>
         <div className="from"><span className="k">{c.fromK}</span><span className="v">{c.fromV}</span></div>
+        <a className="loc-quote" href={bookHref}>
+          {quoteLabel}
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M6 24h36" />
+            <path d="M32 14l10 10-10 10" />
+          </svg>
+        </a>
       </div>
-    </a>
+    </article>
   );
 }
 
@@ -31,6 +38,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ lang
   if (!hasLocale(lang)) notFound();
   const dict = (await getDictionary(lang)).locations;
   const L = (p: string) => `/${lang}${p}`;
+  const bookHref = L("/book");
 
   return (
     <>
@@ -38,7 +46,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ lang
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1562281302-809108fd533c?w=2400&q=80"
+        bg="/uploads/site/sea-transfer.jpg"
       />
 
       <section className="section reveal">
@@ -52,7 +60,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ lang
             <p className="lead right">{dict.ports.lead}</p>
           </div>
           <div className="loc-grid reveal-stagger" style={{ marginTop: "var(--space-lg)" }}>
-            {(dict.ports.items as LocCard[]).map((c) => <LocCardEl key={c.id} c={c} />)}
+            {(dict.ports.items as LocCard[]).map((c) => <LocCardEl key={c.id} c={c} bookHref={bookHref} quoteLabel={dict.quoteLabel} />)}
           </div>
         </div>
       </section>
@@ -68,7 +76,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ lang
             <p className="lead right">{dict.beaches.lead}</p>
           </div>
           <div className="loc-grid reveal-stagger" style={{ marginTop: "var(--space-lg)" }}>
-            {(dict.beaches.items as LocCard[]).map((c) => <LocCardEl key={c.id} c={c} />)}
+            {(dict.beaches.items as LocCard[]).map((c) => <LocCardEl key={c.id} c={c} bookHref={bookHref} quoteLabel={dict.quoteLabel} />)}
           </div>
         </div>
       </section>
@@ -84,7 +92,7 @@ export default async function LocationsPage({ params }: { params: Promise<{ lang
             <p className="lead right">{dict.landmarks.lead}</p>
           </div>
           <div className="loc-grid reveal-stagger" style={{ marginTop: "var(--space-lg)" }}>
-            {(dict.landmarks.items as LocCard[]).map((c) => <LocCardEl key={c.id} c={c} />)}
+            {(dict.landmarks.items as LocCard[]).map((c) => <LocCardEl key={c.id} c={c} bookHref={bookHref} quoteLabel={dict.quoteLabel} />)}
           </div>
         </div>
       </section>

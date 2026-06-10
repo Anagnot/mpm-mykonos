@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Eyebrow, RichText, RuleGold } from "@/components/ui";
 import { getDictionary, hasLocale } from "./dictionaries";
 
-const heroBg = "https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=2400&q=80";
+const heroBg = "/uploads/site/chauffeur-door.jpg";
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
