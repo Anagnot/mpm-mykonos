@@ -57,7 +57,7 @@ export default async function FleetPage({ params }: { params: Promise<{ lang: st
             </div>
             <p className="lead right">{dict.category.lead}</p>
           </div>
-          <div className="fleet-grid reveal-stagger">
+          <div className="fleet-grid two-up reveal-stagger">
             {(dict.cards as Card[]).map((c) => (
               <Link key={c.id} className="fleet-card" href={`#${c.id}`}>
                 <div className="img-wrap">

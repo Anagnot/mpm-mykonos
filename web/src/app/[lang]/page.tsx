@@ -76,7 +76,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             </div>
             <p className="lead right">{dict.fleet.lead}</p>
           </div>
-          <div className="fleet-grid reveal-stagger">
+          <div className="fleet-grid two-up reveal-stagger">
             {dict.fleet.items.map((v) => (
               <Link key={v.id} className="fleet-card" href={L(`/fleet#${v.id}`)}>
                 <div className="img-wrap">
