@@ -18,7 +18,7 @@
     },
     "fleet": {
       "title": "Στόλος · MPM · Mykonos Precious Moments",
-      "description": "Mercedes-Benz V-Class, S-Class, Sprinter, EQS, G-Class, Maybach, ελικόπτερο και σκάφος — ολοκαίνουρια, με αντικατάσταση κάθε 24 μήνες."
+      "description": "Mercedes-Benz Vito premium van και Sprinter luxury minibus, συν συνεργάτες για ελικόπτερο και σκάφος — premium ιδιωτικές και group μεταφορές σε όλη τη Μύκονο."
     },
     "locations": {
       "title": "Τοποθεσίες · MPM · Mykonos Precious Moments",
@@ -153,7 +153,7 @@
       "scrollHint": "Κύλιση"
     },
     "promise": [
-      { "icon": "icon-diamond.svg", "title": "Ολοκαίνουριος luxury στόλος", "body": "Mercedes-Benz V-Class, S-Class και minibus Sprinter — με αντικατάσταση κάθε 24 μήνες. Πάντα άψογα, πάντα δροσερά." },
+      { "icon": "icon-diamond.svg", "title": "Premium στόλος Mercedes", "body": "Mercedes-Benz Vito premium van και Sprinter luxury minibus — νέα μοντέλα, πάντα άψογα. Πάντα δροσερά, πάντα έτοιμα." },
       { "icon": "icon-shield.svg", "title": "Διακριτικοί, αγγλόφωνοι σοφέρ", "body": "Επιλεγμένοι ντόπιοι με γνώσεις insider για τη Μύκονο. Εκπαιδευμένοι σε VIP και οικογενειακές μεταφορές, με έλεγχο ασφαλείας." },
       { "icon": "icon-clock.svg", "title": "Concierge διαθέσιμος 24 / 7", "body": "Βραδινές παραλαβές από το Scorpios, αυγινές μεταφορές προς JMK, last-minute συναντήσεις σε σκάφη στον Τούρλο — όλα οργανωμένα." }
     ],
@@ -177,9 +177,8 @@
       "seatsLabel": "Θέσεις",
       "bagsLabel": "Αποσκευές",
       "items": [
-        { "id": "v-class", "img": "https://images.unsplash.com/photo-1724479839764-65981526641d?w=1200&q=80", "badge": "Luxury Van", "name": "Mercedes-Benz V-Class", "specs": [["7", "Θέσεις"], ["5", "Αποσκευές"], [null, "Wi-Fi · Νερό"]] },
-        { "id": "s-class", "img": "https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=1200&q=80", "badge": "Sedan", "name": "Mercedes-Benz S-Class", "specs": [["3", "Θέσεις"], ["2", "Αποσκευές"], [null, "Με σοφέρ"]] },
-        { "id": "sprinter", "img": "https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=1200&q=80", "badge": "Minibus", "name": "Mercedes-Benz Sprinter", "specs": [["16", "Θέσεις"], ["14", "Αποσκευές"], [null, "Group Charter"]] }
+        { "id": "vito", "img": "/uploads/fleet/vito.jpg", "badge": "Premium Van", "name": "Mercedes-Benz Vito Premium Van", "specs": [["7", "Θέσεις"], ["7", "Αποσκευές"], [null, "Private · Airport"]] },
+        { "id": "sprinter", "img": "/uploads/fleet/sprinter.jpg", "badge": "Luxury Minibus", "name": "Mercedes-Benz Sprinter Luxury Minibus", "specs": [["16", "Θέσεις"], ["16", "Αποσκευές"], [null, "Γκρουπ · VIP"]] }
       ],
       "seeFull": "Δείτε όλο τον στόλο"
     },
@@ -269,16 +268,6 @@
         }
       ]
     },
-    "team": {
-      "eyebrow": "Η ομάδα",
-      "title": "Οι άνθρωποι που σηκώνουν<br />το τηλέφωνό σας.",
-      "lead": "Μια μικρή ομάδα — δώδεκα σοφέρ, δύο καπετάνιοι και τρεις concierge. Όλοι σε φιλικούς όρους με τους περισσότερους τακτικούς μας επισκέπτες.",
-      "items": [
-        { "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80", "role": "Ιδρυτής · Επικεφαλής σοφέρ", "name": "Αλέξανδρος Μαύρος", "bio": "Δεκαπέντε χρόνια στη μεταφορά διπλωματικής και yacht πελατείας στη Μύκονο, πριν την ίδρυση της MPM το 2018." },
-        { "img": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80", "role": "Υπεύθυνη concierge", "name": "Ελένη Βασιλάκη", "bio": "Η φωνή στο τηλέφωνο όταν τηλεφωνείτε. Μιλά Ελληνικά, Αγγλικά, Γαλλικά και λίγα Ιταλικά." },
-        { "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80", "role": "Καπετάνιος · Θαλάσσιες μεταφορές", "name": "Καπετάν Δημήτρης", "bio": "Είκοσι χρόνια στα κυκλαδίτικα νερά. Ξέρει κάθε ήσυχο κολπίσκο ανάμεσα σε Δήλο και Ρήνεια." }
-      ]
-    },
     "testimonial": {
       "eyebrow": "Σημείωμα από επισκέπτη",
       "quote": "Ένα standard τόσο σταθερό που μοιάζει αόρατο — και αυτό ακριβώς είναι το ζητούμενο.",
@@ -310,12 +299,8 @@
       "vehicleDefault": "Αφήστε την MPM να επιλέξει",
       "vehicleOptions": [
         "Αφήστε την MPM να επιλέξει",
-        "Mercedes V-Class (Luxury Van)",
-        "Mercedes S-Class (Sedan)",
-        "Mercedes EQS (Ηλεκτρικό)",
-        "Mercedes G-Class (SUV)",
-        "Mercedes Sprinter (Minibus)",
-        "Mercedes-Maybach S 680 (Flagship)"
+        "Mercedes-Benz Vito (Premium Van)",
+        "Mercedes-Benz Sprinter (Luxury Minibus)"
       ],
       "serviceOptions": [
         "Μεταφορά Ανά Διαδρομή",
@@ -417,31 +402,21 @@
     "header": {
       "eyebrow": "Ο Στόλος",
       "title": "Ολοκαίνουριος, κάθε<br /><em>24 μήνες</em>.",
-      "sub": "Ένας μικρός, επιμελημένος στόλος Mercedes-Benz, συν συνεργάτες για ελικόπτερα και σκάφη — επιλεγμένα για άνεση, διακριτικότητα και τον τρόπο που χειρίζονται τους δρόμους του νησιού."
+      "sub": "Ένας επιμελημένος στόλος premium Mercedes-Benz — από private van transfers έως luxury minibus για group μεταφορές — συν συνεργάτες για ελικόπτερα και σκάφη, επιλεγμένα για άνεση, ασφάλεια και αξιοπιστία."
     },
     "category": {
       "eyebrow": "Ανά κατηγορία",
       "title": "Διαλέξτε το <em>όχημα</em>,<br />ή αφήστε εμάς να διαλέξουμε.",
-      "lead": "Κάθε αυτοκίνητο έχει κλιματισμό, Wi-Fi και εμφιαλωμένο νερό, και καθαρίζεται καθημερινά. Το σωστό όχημα εξαρτάται από το μέγεθος της ομάδας, τις αποσκευές και τον δρόμο προς τη βίλα σας."
+      "lead": "Ο στόλος μας περιλαμβάνει premium Mercedes οχήματα, επιλεγμένα για άνεση, ασφάλεια και αξιοπιστία. Κάθε όχημα έχει κλιματισμό, καθαρίζεται καθημερινά και είναι επιλεγμένο για μια ομαλή, επαγγελματική μετακίνηση σε όλη τη Μύκονο."
     },
     "cards": [
-      { "id": "s-class", "img": "https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=1200&q=80", "badge": "Sedan", "name": "Mercedes-Benz S-Class", "specs": [["3", "Θέσεις"], ["2", "Αποσκευές"], [null, "Ζευγάρια · Στελέχη"]] },
-      { "id": "v-class", "img": "https://images.unsplash.com/photo-1724479839764-65981526641d?w=1200&q=80", "badge": "Luxury Van", "name": "Mercedes-Benz V-Class", "specs": [["7", "Θέσεις"], ["5", "Αποσκευές"], [null, "Οικογένεια · Ομάδα"]] },
-      { "id": "sprinter", "img": "https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=1200&q=80", "badge": "Minibus", "name": "Mercedes-Benz Sprinter", "specs": [["16", "Θέσεις"], ["14", "Αποσκευές"], [null, "Group charter"]] },
-      { "id": "eqs", "img": "https://images.unsplash.com/photo-1672679136563-7a7b5dae2e39?w=1200&q=80", "badge": "Ηλεκτρικό", "name": "Mercedes-Benz EQS", "specs": [["4", "Θέσεις"], ["2", "Αποσκευές"], [null, "Αθόρυβο · Μηδενικοί ρύποι"]] },
-      { "id": "g-wagon", "img": "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=1200&q=80", "badge": "SUV", "name": "Mercedes-Benz G-Class", "specs": [["4", "Θέσεις"], ["3", "Αποσκευές"], [null, "Off-road · Βίλες"]] },
-      { "id": "maybach", "img": "https://images.unsplash.com/photo-1522255272218-7ac5249be344?w=1200&q=80", "badge": "Flagship", "name": "Mercedes-Maybach S 680", "specs": [["3", "Θέσεις"], ["2", "Αποσκευές"], [null, "Επίσημες αφίξεις"]] },
-      { "id": "helicopter", "img": "https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?w=1200&q=80", "badge": "Αέρας", "name": "Airbus H145 Ελικόπτερο", "specs": [["6", "Θέσεις"], ["6", "Αποσκευές"], [null, "Αθήνα · 45 λεπτά"]] },
-      { "id": "yacht", "img": "https://images.unsplash.com/photo-1562281302-809108fd533c?w=1200&q=80", "badge": "Θάλασσα", "name": "Sunseeker 76 Yacht", "specs": [["10", "Επισκέπτες"], ["4", "Καμπίνες"], [null, "Δήλος · Charter"]] }
+      { "id": "vito", "img": "/uploads/fleet/vito.jpg", "badge": "Premium Van", "name": "Mercedes-Benz Vito Premium Van", "specs": [["7", "Θέσεις"], ["7", "Αποσκευές"], [null, "Private · Airport"]] },
+      { "id": "sprinter", "img": "/uploads/fleet/sprinter.jpg", "badge": "Luxury Minibus", "name": "Mercedes-Benz Sprinter Luxury Minibus", "specs": [["16", "Θέσεις"], ["16", "Αποσκευές"], [null, "Γκρουπ · VIP"]] }
     ],
     "carsTitle": "<em>Τα αυτοκίνητα.</em>",
     "carRows": [
-      { "id": "s-class", "tag": "Sedan · 01", "title": "Mercedes-Benz S-Class", "body": "Το ήσυχο, executive sedan. Για ζευγάρια, στελέχη και διακριτικές αφίξεις στο JMK ή το Νέο Λιμάνι. Καθίσματα μασάζ ως standard.", "specs": [["Θέσεις", "3"], ["Αποσκευές", "2"], ["Κινητήρας", "Hybrid V6"], ["Έτος", "2025"]], "img": "https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=1400&q=80" },
-      { "id": "v-class", "tag": "Luxury van · 02", "title": "Mercedes-Benz V-Class", "body": "Το πιο ζητούμενο όχημά μας. Captain's chairs για οικογένειες, πίσω καναπές για παρέες, πανοραμική οροφή για όσους έρχονται πρώτη φορά στο νησί.", "specs": [["Θέσεις", "7"], ["Αποσκευές", "5"], ["Κινητήρας", "Diesel V6"], ["Έτος", "2025"]], "img": "https://images.unsplash.com/photo-1724479839764-65981526641d?w=1400&q=80" },
-      { "id": "sprinter", "tag": "Minibus · 03", "title": "Mercedes-Benz Sprinter", "body": "Για γαμήλιες παρέες, εταιρικά γκρουπ και μεγάλες οικογένειες. Ανακλινόμενα καθίσματα, ψυγείο εντός και αποθήκη αποσκευών.", "specs": [["Θέσεις", "16"], ["Αποσκευές", "14"], ["Κινητήρας", "Diesel"], ["Έτος", "2024"]], "img": "https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=1400&q=80" },
-      { "id": "eqs", "tag": "Ηλεκτρικό · 04", "title": "Mercedes-Benz EQS", "body": "Το πλήρως ηλεκτρικό flagship. Σχεδόν αθόρυβο, μηδενικοί τοπικοί ρύποι — η Μύκονος μέσα από το πιο ευγενικό παρμπρίζ.", "specs": [["Θέσεις", "4"], ["Αποσκευές", "2"], ["Αυτονομία", "700 χλμ."], ["Έτος", "2025"]], "img": "https://images.unsplash.com/photo-1672679136563-7a7b5dae2e39?w=1400&q=80" },
-      { "id": "g-wagon", "tag": "SUV · 05", "title": "Mercedes-Benz G-Class", "body": "Για βίλες σε δύσβατα μονοπάτια, picnic στον Άγιο Σώστη και εκδρομές σε δύσκολους κολπίσκους. Σίγουρο, ικανό, εξακολουθεί να είναι Mercedes.", "specs": [["Θέσεις", "4"], ["Αποσκευές", "3"], ["Κίνηση", "4MATIC"], ["Έτος", "2024"]], "img": "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=1400&q=80" },
-      { "id": "maybach", "tag": "Flagship · 06", "title": "Mercedes-Maybach S 680", "body": "Το flagship μας. Διατηρείται για επίσημες αφίξεις, ιδιαίτερες επετείους και τον επισκέπτη που θέλει ακριβώς το καλύτερο.", "specs": [["Θέσεις", "3"], ["Αποσκευές", "2"], ["Κινητήρας", "V12 6.0L"], ["Έτος", "2025"]], "img": "https://images.unsplash.com/photo-1522255272218-7ac5249be344?w=1400&q=80" }
+      { "id": "vito", "tag": "Premium van · 01", "title": "Mercedes-Benz Vito Premium Van", "body": "Το premium private van μας — ιδανικό για private, airport και hotel transfers. Άνετο για οικογένειες, ζευγάρια και μικρά groups, με κλιματισμό, προσεγμένο εσωτερικό και χώρο για έως επτά μεγάλες αποσκευές.", "specs": [["Θέσεις", "Έως 7"], ["Αποσκευές", "7 μεγάλες"], ["Άνεση", "Κλιματισμός · Wi-Fi"], ["Μοντέλο", "Νέο · 2026"]], "img": "/uploads/fleet/vito-interior.jpg" },
+      { "id": "sprinter", "tag": "Luxury minibus · 02", "title": "Mercedes-Benz Sprinter Luxury Minibus", "body": "Το luxury minibus μας για group και VIP transfers — γάμους, οικογένειες, εταιρικά γκρουπ και private day routes. Έως δεκαέξι επιβάτες ταξιδεύουν άνετα, με άφθονο χώρο για δεκαέξι μεγάλες αποσκευές σε airport, port και island routes.", "specs": [["Θέσεις", "Έως 16"], ["Αποσκευές", "16 μεγάλες"], ["Χρήση", "Γκρουπ · VIP"], ["Μοντέλο", "Νέο · 2026"]], "img": "/uploads/fleet/sprinter-cabin.jpg" }
     ],
     "airSeaTitle": "<em>Από αέρα, από θάλασσα.</em>",
     "airSeaRows": [
@@ -540,7 +515,7 @@
       "lead": "Κάθε υπηρεσία είναι μεμονωμένα κρατήσιμη ή συνδυάζεται σε ένα ενιαίο, εξατομικευμένο πρόγραμμα. Ο concierge αναλαμβάνει τις συνδέσεις.",
       "fleetTile": {
         "title": "Ο Στόλος",
-        "body": "Mercedes-Benz V-Class, S-Class, Sprinter, EQS και G-Wagon — με αντικατάσταση κάθε 24 μήνες.",
+        "body": "Mercedes-Benz Vito premium van και Sprinter luxury minibus — νέα μοντέλα, πάντα άψογα.",
         "cta": "Δείτε τον στόλο"
       },
       "items": [

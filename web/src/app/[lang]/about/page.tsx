@@ -100,29 +100,6 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         </div>
       </section>
 
-      <section className="section reveal">
-        <div className="container">
-          <div className="section-header">
-            <div>
-              <Eyebrow>{dict.team.eyebrow}</Eyebrow>
-              <RuleGold />
-              <RichText as="h2" className="title-h2" html={dict.team.title} />
-            </div>
-            <p className="lead right">{dict.team.lead}</p>
-          </div>
-          <div className="team-grid reveal-stagger">
-            {dict.team.items.map((t) => (
-              <div key={t.name} className="team-card">
-                <div className="portrait"><img src={t.img} alt={t.name} /></div>
-                <span className="eyebrow-sm">{t.role}</span>
-                <h4>{t.name}</h4>
-                <p>{t.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section aegean reveal">
         <div className="container">
           <div className="testimonial">

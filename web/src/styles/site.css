@@ -408,6 +408,7 @@ a { color: inherit; }
   gap: clamp(2rem, 3vw, 2.5rem);
   margin-top: var(--space-lg);
 }
+.fleet-grid.two-up { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin-left: auto; margin-right: auto; }
 .fleet-card { display: flex; flex-direction: column; cursor: pointer; text-decoration: none; color: inherit; }
 .fleet-card .img-wrap { position: relative; aspect-ratio: 4/3; overflow: hidden; background: var(--color-marble); }
 .fleet-card .img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--dur-slow) var(--ease-luxe); }
@@ -448,6 +449,16 @@ a { color: inherit; }
 .fleet-row-text .eyebrow-sm { font-size: 10px; letter-spacing: var(--track-widest); text-transform: uppercase; color: var(--color-gold); font-weight: 500; }
 .fleet-row-text h3 { font-family: var(--font-serif); font-size: clamp(2rem, 3.2vw, 2.8rem); font-weight: 300; line-height: 1.05; letter-spacing: -0.01em; margin: 0; }
 .fleet-row-text p { color: var(--fg-secondary); line-height: 1.7; margin: 0; max-width: 52ch; }
+.fleet-row-gallery {
+  grid-column: 1 / -1;
+  order: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.fleet-row-gallery .shot { display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-marble); }
+.fleet-row-gallery .shot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform var(--dur-slow) var(--ease-luxe); }
+.fleet-row-gallery .shot:hover img { transform: scale(1.05); }
 .spec-grid {
   display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 16px;
@@ -735,7 +746,7 @@ a { color: inherit; }
   .site-header { grid-template-columns: auto 1fr auto; padding: 0 20px; }
   .site-header .nav { display: none; }
   .menu-toggle { display: inline-flex; }
-  .services-grid, .fleet-grid, .promise-strip, .loc-grid, .team-grid { grid-template-columns: 1fr; }
+  .services-grid, .fleet-grid, .fleet-grid.two-up, .promise-strip, .loc-grid, .team-grid { grid-template-columns: 1fr; }
   .promise-item + .promise-item { border-left: 0; border-top: 1px solid var(--border-hairline); }
   .booking { grid-template-columns: 1fr; }
   .locations-list { grid-template-columns: 1fr; }
@@ -745,6 +756,7 @@ a { color: inherit; }
   .fleet-row, .fleet-row:nth-child(even) { grid-template-columns: 1fr; }
   .fleet-row:nth-child(even) .fleet-row-text { order: 0; }
   .fleet-row:nth-child(even) .fleet-row-img { order: 0; }
+  .fleet-row-gallery { grid-template-columns: repeat(2, 1fr); order: 0; }
   .stats-strip { grid-template-columns: repeat(2, 1fr); }
   .stats-strip .stat + .stat:nth-child(3) { border-left: 0; padding-left: 0; }
   .spec-grid { grid-template-columns: repeat(2, 1fr); }

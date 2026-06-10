@@ -18,7 +18,7 @@
     },
     "fleet": {
       "title": "Fleet · MPM · Mykonos Precious Moments",
-      "description": "Mercedes-Benz V-Class, S-Class, Sprinter, EQS, G-Class, Maybach, helicopter and yacht — brand-new, replaced every 24 months."
+      "description": "Mercedes-Benz Vito premium van and Sprinter luxury minibus, plus helicopter and yacht partners — premium private and group transfers across Mykonos."
     },
     "locations": {
       "title": "Locations · MPM · Mykonos Precious Moments",
@@ -153,7 +153,7 @@
       "scrollHint": "Scroll"
     },
     "promise": [
-      { "icon": "icon-diamond.svg", "title": "Brand-new luxury fleet", "body": "Mercedes-Benz V-Class, S-Class and Sprinter minibuses — replaced on a 24-month cycle. Always immaculate, always cool." },
+      { "icon": "icon-diamond.svg", "title": "Premium Mercedes fleet", "body": "Mercedes-Benz Vito premium van and Sprinter luxury minibus — latest models, kept immaculate. Always cool, always ready." },
       { "icon": "icon-shield.svg", "title": "Discreet, English-speaking chauffeurs", "body": "Hand-picked locals with insider tips for Mykonos. Trained for VIP and family transport, security cleared." },
       { "icon": "icon-clock.svg", "title": "24 / 7 concierge availability", "body": "Late-night pickups from Scorpios, dawn transfers to JMK, last-minute yacht meets in Tourlos — handled." }
     ],
@@ -177,9 +177,8 @@
       "seatsLabel": "Seats",
       "bagsLabel": "Bags",
       "items": [
-        { "id": "v-class", "img": "https://images.unsplash.com/photo-1724479839764-65981526641d?w=1200&q=80", "badge": "Luxury Van", "name": "Mercedes-Benz V-Class", "specs": [["7", "Seats"], ["5", "Bags"], [null, "Wi-Fi · Water"]] },
-        { "id": "s-class", "img": "https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=1200&q=80", "badge": "Sedan", "name": "Mercedes-Benz S-Class", "specs": [["3", "Seats"], ["2", "Bags"], [null, "Chauffeured"]] },
-        { "id": "sprinter", "img": "https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=1200&q=80", "badge": "Minibus", "name": "Mercedes-Benz Sprinter", "specs": [["16", "Seats"], ["14", "Bags"], [null, "Group Charter"]] }
+        { "id": "vito", "img": "/uploads/fleet/vito.jpg", "badge": "Premium Van", "name": "Mercedes-Benz Vito Premium Van", "specs": [["7", "Seats"], ["7", "Bags"], [null, "Private · Airport"]] },
+        { "id": "sprinter", "img": "/uploads/fleet/sprinter.jpg", "badge": "Luxury Minibus", "name": "Mercedes-Benz Sprinter Luxury Minibus", "specs": [["16", "Seats"], ["16", "Bags"], [null, "Groups · VIP"]] }
       ],
       "seeFull": "See the full fleet"
     },
@@ -269,16 +268,6 @@
         }
       ]
     },
-    "team": {
-      "eyebrow": "The team",
-      "title": "The people who pick up<br />your phone calls.",
-      "lead": "A small house — twelve chauffeurs, two captains, and three concierges. Every one of them is on a first-name basis with most of our regular guests.",
-      "items": [
-        { "img": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80", "role": "Founder · Lead chauffeur", "name": "Alexandros Mavros", "bio": "Fifteen years driving diplomatic and yacht clientele on Mykonos before founding MPM in 2018." },
-        { "img": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=80", "role": "Head of concierge", "name": "Eleni Vasilakis", "bio": "The voice on the phone when you call. Speaks Greek, English, French, and a little Italian." },
-        { "img": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=900&q=80", "role": "Captain · Sea transfers", "name": "Captain Dimitris", "bio": "Twenty years in Cycladic waters. Knows every quiet cove between Delos and Rinia." }
-      ]
-    },
     "testimonial": {
       "eyebrow": "A Note From a Guest",
       "quote": "A standard so consistent it feels invisible — which is exactly the point.",
@@ -310,12 +299,8 @@
       "vehicleDefault": "Let MPM choose",
       "vehicleOptions": [
         "Let MPM choose",
-        "Mercedes V-Class (Luxury Van)",
-        "Mercedes S-Class (Sedan)",
-        "Mercedes EQS (Electric)",
-        "Mercedes G-Class (SUV)",
-        "Mercedes Sprinter (Minibus)",
-        "Mercedes-Maybach S 680 (Flagship)"
+        "Mercedes-Benz Vito (Premium Van)",
+        "Mercedes-Benz Sprinter (Luxury Minibus)"
       ],
       "serviceOptions": [
         "Per-Route Transfer",
@@ -417,31 +402,21 @@
     "header": {
       "eyebrow": "The Fleet",
       "title": "Brand-new, every<br /><em>24 months</em>.",
-      "sub": "A small, curated fleet of Mercedes-Benz vehicles, plus aviation and yacht partners — selected for comfort, discretion, and the way they handle island roads."
+      "sub": "A curated fleet of premium Mercedes-Benz vehicles — from private van transfers to luxury minibus group transportation — plus aviation and yacht partners, selected for comfort, safety and reliability."
     },
     "category": {
       "eyebrow": "By category",
       "title": "Choose the <em>vehicle</em>,<br />or let us choose for you.",
-      "lead": "Every car is air-conditioned, equipped with Wi-Fi and bottled water, and detailed daily. The right vehicle depends on group size, luggage, and the road to your villa."
+      "lead": "Our fleet includes premium Mercedes vehicles, selected for comfort, safety and reliability. Every vehicle is air-conditioned, detailed daily, and chosen to give a smooth, professional ride across Mykonos."
     },
     "cards": [
-      { "id": "s-class", "img": "https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=1200&q=80", "badge": "Sedan", "name": "Mercedes-Benz S-Class", "specs": [["3", "Seats"], ["2", "Bags"], [null, "Couples · Executive"]] },
-      { "id": "v-class", "img": "https://images.unsplash.com/photo-1724479839764-65981526641d?w=1200&q=80", "badge": "Luxury Van", "name": "Mercedes-Benz V-Class", "specs": [["7", "Seats"], ["5", "Bags"], [null, "Family · Group"]] },
-      { "id": "sprinter", "img": "https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=1200&q=80", "badge": "Minibus", "name": "Mercedes-Benz Sprinter", "specs": [["16", "Seats"], ["14", "Bags"], [null, "Group charter"]] },
-      { "id": "eqs", "img": "https://images.unsplash.com/photo-1672679136563-7a7b5dae2e39?w=1200&q=80", "badge": "Electric", "name": "Mercedes-Benz EQS", "specs": [["4", "Seats"], ["2", "Bags"], [null, "Silent · Zero-emission"]] },
-      { "id": "g-wagon", "img": "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=1200&q=80", "badge": "SUV", "name": "Mercedes-Benz G-Class", "specs": [["4", "Seats"], ["3", "Bags"], [null, "Off-road · Villas"]] },
-      { "id": "maybach", "img": "https://images.unsplash.com/photo-1522255272218-7ac5249be344?w=1200&q=80", "badge": "Flagship", "name": "Mercedes-Maybach S 680", "specs": [["3", "Seats"], ["2", "Bags"], [null, "State arrivals"]] },
-      { "id": "helicopter", "img": "https://images.unsplash.com/photo-1607525884336-66ccfac7ab56?w=1200&q=80", "badge": "Air", "name": "Airbus H145 Helicopter", "specs": [["6", "Seats"], ["6", "Bags"], [null, "Athens · 45 min"]] },
-      { "id": "yacht", "img": "https://images.unsplash.com/photo-1562281302-809108fd533c?w=1200&q=80", "badge": "Sea", "name": "Sunseeker 76 Yacht", "specs": [["10", "Guests"], ["4", "Cabins"], [null, "Delos · Charter"]] }
+      { "id": "vito", "img": "/uploads/fleet/vito.jpg", "badge": "Premium Van", "name": "Mercedes-Benz Vito Premium Van", "specs": [["7", "Seats"], ["7", "Bags"], [null, "Private · Airport"]] },
+      { "id": "sprinter", "img": "/uploads/fleet/sprinter.jpg", "badge": "Luxury Minibus", "name": "Mercedes-Benz Sprinter Luxury Minibus", "specs": [["16", "Seats"], ["16", "Bags"], [null, "Groups · VIP"]] }
     ],
     "carsTitle": "<em>The cars.</em>",
     "carRows": [
-      { "id": "s-class", "tag": "Sedan · 01", "title": "Mercedes-Benz S-Class", "body": "The quiet, executive sedan. For couples, executives, and discreet arrivals at JMK or the New Port. Massage seats as standard.", "specs": [["Seats", "3"], ["Bags", "2"], ["Engine", "Hybrid V6"], ["Year", "2025"]], "img": "https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=1400&q=80" },
-      { "id": "v-class", "tag": "Luxury van · 02", "title": "Mercedes-Benz V-Class", "body": "Our most-requested vehicle. Captain's chairs for families, rear sofa for friends, panoramic roof for first-time arrivals on the island.", "specs": [["Seats", "7"], ["Bags", "5"], ["Engine", "Diesel V6"], ["Year", "2025"]], "img": "https://images.unsplash.com/photo-1724479839764-65981526641d?w=1400&q=80" },
-      { "id": "sprinter", "tag": "Minibus · 03", "title": "Mercedes-Benz Sprinter", "body": "For wedding parties, corporate groups, and large families. Reclining seats, on-board fridge, and luggage compartment.", "specs": [["Seats", "16"], ["Bags", "14"], ["Engine", "Diesel"], ["Year", "2024"]], "img": "https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=1400&q=80" },
-      { "id": "eqs", "tag": "Electric · 04", "title": "Mercedes-Benz EQS", "body": "All-electric flagship. Whisper-silent, zero local emissions — Mykonos through its kindest possible windshield.", "specs": [["Seats", "4"], ["Bags", "2"], ["Range", "700 km"], ["Year", "2025"]], "img": "https://images.unsplash.com/photo-1672679136563-7a7b5dae2e39?w=1400&q=80" },
-      { "id": "g-wagon", "tag": "SUV · 05", "title": "Mercedes-Benz G-Class", "body": "For villas on rough hill tracks, beach picnics on Agios Sostis, and trips to the harder-to-reach coves. Confident, capable, still a Mercedes.", "specs": [["Seats", "4"], ["Bags", "3"], ["Drive", "4MATIC"], ["Year", "2024"]], "img": "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=1400&q=80" },
-      { "id": "maybach", "tag": "Flagship · 06", "title": "Mercedes-Maybach S 680", "body": "Our flagship. Reserved for state arrivals, special anniversaries, and the once-a-year guest who wants exactly the best.", "specs": [["Seats", "3"], ["Bags", "2"], ["Engine", "V12 6.0L"], ["Year", "2025"]], "img": "https://images.unsplash.com/photo-1522255272218-7ac5249be344?w=1400&q=80" }
+      { "id": "vito", "tag": "Premium van · 01", "title": "Mercedes-Benz Vito Premium Van", "body": "Our premium private van — ideal for private, airport and hotel transfers. Comfortable for families, couples and small groups, with air-conditioning, a refined interior, and room for up to seven large suitcases.", "specs": [["Seats", "Up to 7"], ["Luggage", "7 large bags"], ["Comfort", "Climate · Wi-Fi"], ["Model", "Latest · 2026"]], "img": "/uploads/fleet/vito-interior.jpg" },
+      { "id": "sprinter", "tag": "Luxury minibus · 02", "title": "Mercedes-Benz Sprinter Luxury Minibus", "body": "Our luxury minibus for group and VIP transfers — weddings, families, corporate groups, and private day routes. Up to sixteen passengers travel in comfort, with generous space for sixteen large bags on airport, port and island routes.", "specs": [["Seats", "Up to 16"], ["Luggage", "16 large bags"], ["Use", "Groups · VIP"], ["Model", "Latest · 2026"]], "img": "/uploads/fleet/sprinter-cabin.jpg" }
     ],
     "airSeaTitle": "<em>By air, by sea.</em>",
     "airSeaRows": [
@@ -540,7 +515,7 @@
       "lead": "Every service is bookable on its own, or combined into a single tailor-made itinerary. Our concierge handles the joins.",
       "fleetTile": {
         "title": "The Fleet",
-        "body": "Mercedes-Benz V-Class, S-Class, Sprinter, EQS and G-Wagon — replaced every 24 months.",
+        "body": "Mercedes-Benz Vito premium van and Sprinter luxury minibus — latest models, kept immaculate.",
         "cta": "See the fleet"
       },
       "items": [
