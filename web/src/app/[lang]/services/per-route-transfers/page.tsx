@@ -17,7 +17,7 @@ export default async function PerRouteTransfersPage({ params }: { params: Promis
   return (
     <ServiceDetailLayout
       lang={lang}
-      bg="https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=2400&q=80"
+      bg="/uploads/site/van-sea.jpg"
       header={d.header}
       intro={d.intro}
       row1={d.row1}

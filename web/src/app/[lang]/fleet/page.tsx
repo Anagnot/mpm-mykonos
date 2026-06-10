@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CtaStrip, Eyebrow, PageHeader, RichText, RuleGold } from "@/components/ui";
+import FleetGallery from "@/components/FleetGallery";
 import { getDictionary, hasLocale } from "../dictionaries";
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -47,13 +48,7 @@ function FleetRow({ row, gallery }: { row: Row; gallery?: string[] }) {
       </div>
       <div className="fleet-row-img"><img src={row.img} alt="" /></div>
       {gallery && gallery.length > 0 && (
-        <div className="fleet-row-gallery">
-          {gallery.map((src) => (
-            <a key={src} className="shot" href={src} target="_blank" rel="noopener noreferrer">
-              <img src={src} alt={`${row.title} — photo`} loading="lazy" />
-            </a>
-          ))}
-        </div>
+        <FleetGallery images={gallery} label={row.title} />
       )}
     </div>
   );
@@ -71,7 +66,7 @@ export default async function FleetPage({ params }: { params: Promise<{ lang: st
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1592309905620-e5b59f6dcb98?w=2400&q=80"
+        bg="/uploads/site/chauffeur-door.jpg"
       />
 
       <section className="section reveal">

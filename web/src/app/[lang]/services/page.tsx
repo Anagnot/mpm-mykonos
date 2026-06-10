@@ -67,7 +67,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="https://images.unsplash.com/photo-1724479839764-65981526641d?w=2400&q=80"
+        bg="/uploads/site/van-sea-yacht.jpg"
       />
 
       <section className="section reveal">
