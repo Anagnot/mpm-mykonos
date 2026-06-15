@@ -25,7 +25,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           <p className="lead">{dict.hero.lead}</p>
           <div className="actions">
             <Link href={L("/book")} className="btn btn-primary">{dict.hero.primary}</Link>
-            <Link href={L("/services")} className="btn btn-secondary">{dict.hero.secondary}</Link>
+            <Link href={L("/fleet")} className="btn btn-secondary">{dict.hero.secondary}</Link>
           </div>
         </div>
         <span className="scroll-hint">{dict.hero.scrollHint}</span>
@@ -53,9 +53,27 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             </div>
             <p className="lead right">{dict.services.lead}</p>
           </div>
-          <div className="services-grid reveal-stagger">
-            {dict.services.items.map((s) => (
-              <Link key={s.id} className="service-tile" href={L(`/services#${s.id}`)}>
+          <div style={{ marginTop: "var(--space-lg)" }}>
+            <Eyebrow>{dict.services.coreHeading}</Eyebrow>
+            <RuleGold />
+          </div>
+          <div className="services-grid reveal-stagger" style={{ marginTop: 18 }}>
+            {dict.services.core.map((s) => (
+              <Link key={s.id} className="service-tile" href={L(s.path)}>
+                <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
+                <h3>{s.title}</h3>
+                <p>{s.body}</p>
+                <span className="link-luxe">{common.learnMore} <span>→</span></span>
+              </Link>
+            ))}
+          </div>
+          <div style={{ marginTop: "var(--space-lg)" }}>
+            <Eyebrow>{dict.services.additionalHeading}</Eyebrow>
+            <RuleGold />
+          </div>
+          <div className="services-grid reveal-stagger" style={{ marginTop: 18 }}>
+            {dict.services.additional.map((s) => (
+              <Link key={s.id} className="service-tile" href={L(s.path)}>
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
@@ -137,7 +155,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             ))}
           </div>
           <div style={{ marginTop: "var(--space-lg)", display: "flex", justifyContent: "center" }}>
-            <Link href={L("/locations")} className="link-luxe">{dict.locations.viewAll} <span>→</span></Link>
+            <Link href={L("/book")} className="link-luxe">{dict.locations.cta} <span>→</span></Link>
           </div>
         </div>
       </section>

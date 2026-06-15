@@ -41,6 +41,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               <RichText as="p" html={dict.story.p1} />
               <RichText as="p" html={dict.story.p2} />
               <RichText as="p" html={dict.story.p3} />
+              <RichText as="p" html={dict.story.p4} />
             </div>
           </div>
         </div>

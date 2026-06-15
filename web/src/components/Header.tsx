@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 type DropdownKey = "services" | "locations";
 
@@ -19,9 +19,21 @@ type HeaderDict = {
   openMenu: string;
   servicesPanel: { eyebrow: string; title: string; desc: string; viewAll: string };
   locationsPanel: { eyebrow: string; title: string; desc: string; viewAll: string };
-  servicesItems: NavItem[];
+  servicesCoreHeading: string;
+  servicesAdditionalHeading: string;
+  servicesItemsCore: NavItem[];
+  servicesItemsAdditional: NavItem[];
   locationsItems: NavItem[];
   mobileLocationLinks: MobileLink[];
+};
+
+const groupLabelStyle: CSSProperties = {
+  gridColumn: "1 / -1",
+  fontSize: 11,
+  letterSpacing: "0.14em",
+  textTransform: "uppercase",
+  color: "var(--color-gold)",
+  padding: "10px 8px 6px",
 };
 
 const Caret = () => (
@@ -181,7 +193,19 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
             <Link href={localized("/services")} className="link-luxe">{dict.servicesPanel.viewAll} <span>→</span></Link>
           </div>
           <div className="right">
-            {dict.servicesItems.map((item) => (
+            <div style={groupLabelStyle}>{dict.servicesCoreHeading}</div>
+            {dict.servicesItemsCore.map((item) => (
+              <Link key={item.label} href={localized(item.path)}>
+                <img className="ico" src={`/assets/icons/${item.icon}`} alt="" />
+                <div>
+                  <div className="label">{item.label}</div>
+                  <div className="meta">{item.meta}</div>
+                </div>
+                <img src="/assets/icons/icon-arrow-right.svg" alt="" style={{ width: 16, opacity: 0.4 }} />
+              </Link>
+            ))}
+            <div style={groupLabelStyle}>{dict.servicesAdditionalHeading}</div>
+            {dict.servicesItemsAdditional.map((item) => (
               <Link key={item.label} href={localized(item.path)}>
                 <img className="ico" src={`/assets/icons/${item.icon}`} alt="" />
                 <div>
@@ -229,7 +253,7 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
         <Link className="mobile-link" href={localized("/about")}>{dict.about}</Link>
         <details>
           <summary>{dict.services}</summary>
-          {dict.servicesItems.slice(0, 7).map((s) => (
+          {[...dict.servicesItemsCore, ...dict.servicesItemsAdditional].map((s) => (
             <Link key={s.label} className="sub-link" href={localized(s.path)}>{s.label}</Link>
           ))}
         </details>

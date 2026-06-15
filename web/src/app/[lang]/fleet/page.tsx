@@ -110,13 +110,6 @@ export default async function FleetPage({ params }: { params: Promise<{ lang: st
 
       <section className="section reveal">
         <div className="container">
-          <RichText as="h2" className="title-h2" html={dict.airSeaTitle} style={{ marginBottom: "var(--space-md)" }} />
-          {(dict.airSeaRows as Row[]).map((r) => <FleetRow key={r.id} row={r} />)}
-        </div>
-      </section>
-
-      <section className="section alt reveal">
-        <div className="container">
           <div className="section-header center">
             <Eyebrow>{dict.standards.eyebrow}</Eyebrow>
             <RuleGold center />
@@ -132,6 +125,13 @@ export default async function FleetPage({ params }: { params: Promise<{ lang: st
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section alt reveal">
+        <div className="container">
+          <RichText as="h2" className="title-h2" html={dict.airSeaTitle} style={{ marginBottom: "var(--space-md)" }} />
+          {(dict.airSeaRows as Row[]).map((r) => <FleetRow key={r.id} row={r} />)}
         </div>
       </section>
 
