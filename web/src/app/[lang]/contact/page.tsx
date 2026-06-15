@@ -82,7 +82,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
           </div>
           <div style={{ marginTop: "var(--space-lg)", aspectRatio: "21 / 9", overflow: "hidden", border: "1px solid var(--border-hairline)" }}>
             <img
-              src="/uploads/site/van-sea-yacht.jpg"
+              src="/uploads/site/chora-mykonos.jpg"
               alt={dict.map.alt}
               style={{ width: "100%", height: "100%", objectFit: "cover", filter: "grayscale(0.15) contrast(1.02)" }}
             />

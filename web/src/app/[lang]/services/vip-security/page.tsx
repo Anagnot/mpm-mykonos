@@ -17,7 +17,7 @@ export default async function VipSecurityPage({ params }: { params: Promise<{ la
   return (
     <ServiceDetailLayout
       lang={lang}
-      bg="https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=2400&q=80"
+      bg="/uploads/site/van-sea.jpg"
       header={d.header}
       intro={d.intro}
       row1={d.row1}
