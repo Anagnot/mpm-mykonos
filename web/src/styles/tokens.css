@@ -9,10 +9,14 @@
      White marble, deep navy/jet, and a single champagne accent.
      ---------------------------------------------------------- */
 
-  /* Primary surfaces — clean, airy */
-  --color-white:            #FFFFFF;            /* Pure white — primary canvas */
-  --color-marble:           #F9F9F9;            /* Off-white / marble — alt section bg */
-  --color-mist:             #F2F1ED;            /* Warm warm-gray — quiet accent surface */
+  /* Primary surfaces — warm ivory canvas, premium & airy.
+     White is kept true (#FFF) for elevated surfaces & inverse text;
+     the page canvas itself is ivory so the brand never reads as a
+     plain-white tourist site. */
+  --color-white:            #FFFFFF;            /* True white — elevated cards, inverse text, button fills */
+  --color-ivory:            #FAF7F0;            /* Warm ivory — primary canvas */
+  --color-marble:           #F3EEE3;            /* Warm cream — alt section bg */
+  --color-mist:             #ECE5D6;            /* Sand — quiet accent surface */
 
   /* Premium contrast — dark text & heavy elements */
   --color-aegean:           #0A192F;            /* Deep Aegean Navy */
@@ -42,8 +46,9 @@
   --fg-inverse:             var(--color-white);
   --fg-accent:              var(--color-gold);
 
-  --bg-primary:             var(--color-white);
+  --bg-primary:             var(--color-ivory);
   --bg-alt:                 var(--color-marble);
+  --bg-surface:             var(--color-white);   /* Elevated cards/forms that should float above ivory */
   --bg-dark:                var(--color-jet);
   --bg-deep:                var(--color-aegean);
 
@@ -113,12 +118,13 @@
 
 
   /* ----------------------------------------------------------
-     RADII — Sharp luxury. Almost no rounding.
+     RADII — Sharp luxury surfaces, softly-rounded CTAs.
      ---------------------------------------------------------- */
   --radius-none:  0;
   --radius-xs:    2px;
   --radius-sm:    4px;
-  --radius-pill:  999px;   /* reserved for chips / status only */
+  --radius-btn:   14px;     /* CTA buttons — modern, premium rounding */
+  --radius-pill:  999px;   /* reserved for chips / FABs / status */
 
 
   /* ----------------------------------------------------------

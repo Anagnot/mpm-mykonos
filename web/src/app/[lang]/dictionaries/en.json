@@ -65,6 +65,11 @@
     "contact": "Contact us",
     "bookNow": "Book now",
     "openMenu": "Open menu",
+    "contactBar": {
+      "label": "Contact us 24/7",
+      "phoneLabel": "Call now",
+      "whatsappLabel": "WhatsApp"
+    },
     "servicesPanel": {
       "eyebrow": "Our Services",
       "title": "Transfers first — everything else on request.",

@@ -63,7 +63,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
-                <span className="link-luxe">{common.learnMore} <span>→</span></span>
+                <span className="btn btn-outline btn-tile">{common.learnMore}</span>
               </Link>
             ))}
           </div>
@@ -77,7 +77,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
-                <span className="link-luxe">{common.learnMore} <span>→</span></span>
+                <span className="btn btn-outline btn-tile">{common.learnMore}</span>
               </Link>
             ))}
           </div>
