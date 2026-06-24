@@ -31,6 +31,20 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         <span className="scroll-hint">{dict.hero.scrollHint}</span>
       </section>
 
+      <section className="section reveal" id="about">
+        <div className="container">
+          <div className="about-intro">
+            <Eyebrow>{dict.about.eyebrow}</Eyebrow>
+            <RuleGold center />
+            <RichText as="h2" className="title-h2" html={dict.about.title} />
+            {dict.about.body.map((p, i) => (
+              <p className="lead" key={i}>{p}</p>
+            ))}
+            <Link href={L("/about")} className="btn btn-outline">{dict.about.cta}</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="container" style={{ paddingTop: "var(--space-lg)", paddingBottom: "var(--space-lg)" }}>
         <div className="promise-strip reveal-stagger">
           {dict.promise.map((p) => (
@@ -63,7 +77,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
-                <span className="link-luxe">{common.learnMore} <span>→</span></span>
+                <span className="btn btn-outline btn-tile">{common.learnMore}</span>
               </Link>
             ))}
           </div>
@@ -77,7 +91,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
-                <span className="link-luxe">{common.learnMore} <span>→</span></span>
+                <span className="btn btn-outline btn-tile">{common.learnMore}</span>
               </Link>
             ))}
           </div>
@@ -129,33 +143,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             <RuleGold />
             <p className="quote">{dict.testimonial.quote}</p>
             <RichText as="span" className="attribution" html={dict.testimonial.attribution} />
-          </div>
-        </div>
-      </section>
-
-      <section className="section reveal" id="locations">
-        <div className="container">
-          <div className="section-header">
-            <div>
-              <Eyebrow>{dict.locations.eyebrow}</Eyebrow>
-              <RuleGold />
-              <RichText as="h2" className="title-h2" html={dict.locations.title} />
-            </div>
-            <p className="lead right">{dict.locations.lead}</p>
-          </div>
-          <div className="locations-list reveal-stagger">
-            {dict.locations.items.map((l) => (
-              <Link key={l.path} className="location-row" href={L(l.path)}>
-                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                  <span className="name">{l.name}</span>
-                  <span className="meta">{l.meta}</span>
-                </div>
-                <img className="arrow" src="/assets/icons/icon-arrow-right.svg" alt="" />
-              </Link>
-            ))}
-          </div>
-          <div style={{ marginTop: "var(--space-lg)", display: "flex", justifyContent: "center" }}>
-            <Link href={L("/book")} className="link-luxe">{dict.locations.cta} <span>→</span></Link>
           </div>
         </div>
       </section>

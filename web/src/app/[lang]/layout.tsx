@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import PageAnimations from "@/components/PageAnimations";
 import BackToTop from "@/components/BackToTop";
 import CookieConsent from "@/components/CookieConsent";
+import StickyContact from "@/components/StickyContact";
 import { getDictionary, hasLocale, locales } from "./dictionaries";
 import "../globals.css";
 
@@ -44,6 +45,7 @@ export default async function RootLayout({
         <Header lang={lang} dict={dict.header} />
         {children}
         <Footer lang={lang} dict={dict.footer} />
+        {lang === "en" && <StickyContact />}
         <BackToTop label={dict.backToTop} />
         <CookieConsent dict={dict.cookies} />
         <PageAnimations />

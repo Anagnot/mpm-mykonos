@@ -39,7 +39,7 @@ function DetailRow({ d, lang, readMoreLabel }: { d: Detail; lang: string; readMo
       </div>
       <div style={{ display: "flex", alignItems: "center", gap: "var(--space-md, 24px)", flexWrap: "wrap" }}>
         <Link className="btn btn-primary" href={L(d.ctaPath)}>{d.ctaLabel}</Link>
-        <Link className="link-luxe" href={L(d.readMorePath)}>{readMoreLabel} <span>→</span></Link>
+        <Link className="btn btn-outline" href={L(d.readMorePath)}>{readMoreLabel}</Link>
       </div>
     </div>
   );
@@ -87,14 +87,14 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
-                <span className="link-luxe">{dict.readMore} <span>→</span></span>
+                <span className="btn btn-outline btn-tile">{dict.readMore}</span>
               </Link>
             ))}
             <Link className="service-tile" href={L("/fleet")}>
               <img className="icon" src="/assets/icons/icon-van.svg" alt="" />
               <h3>{dict.overview.fleetTile.title}</h3>
               <p>{dict.overview.fleetTile.body}</p>
-              <span className="link-luxe">{dict.overview.fleetTile.cta} <span>→</span></span>
+              <span className="btn btn-outline btn-tile">{dict.overview.fleetTile.cta}</span>
             </Link>
           </div>
         </div>
