@@ -850,6 +850,50 @@ html[lang="en"] { --header-h: 110px; }
   transform: translateY(-0.5px);
 }
 
+/* Home About-intro band (under the hero) */
+.about-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+}
+.about-intro .lead { max-width: 60ch; margin: 0; }
+.about-intro .btn { margin-top: 10px; }
+
+/* Transfer landing page: main copy + highlights checklist */
+.landing-copy { display: flex; flex-direction: column; gap: 18px; }
+.landing-copy .lead { max-width: none; }
+.highlight-list {
+  list-style: none;
+  padding: 0;
+  margin: 22px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 48px;
+}
+.highlight-list li {
+  position: relative;
+  padding: 14px 0 14px 30px;
+  border-bottom: 1px solid var(--border-hairline);
+  font-size: 0.97rem;
+  color: var(--fg-secondary);
+  line-height: 1.5;
+}
+.highlight-list li::before {
+  content: '';
+  position: absolute; left: 2px; top: 20px;
+  width: 9px; height: 5px;
+  border-left: 1.5px solid var(--color-gold);
+  border-bottom: 1.5px solid var(--color-gold);
+  transform: rotate(-45deg);
+}
+@media (max-width: 720px) {
+  .highlight-list { grid-template-columns: 1fr; gap: 0; }
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

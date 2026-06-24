@@ -4,28 +4,23 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 
-type DropdownKey = "services" | "locations";
+type DropdownKey = "services";
 
 type NavItem = { path: string; icon: string; label: string; meta: string };
-type MobileLink = { path: string; label: string };
 
 type HeaderDict = {
   about: string;
   services: string;
-  locations: string;
   fleet: string;
   contact: string;
   bookNow: string;
   openMenu: string;
   contactBar?: { label: string; phoneLabel: string; whatsappLabel: string };
   servicesPanel: { eyebrow: string; title: string; desc: string; viewAll: string };
-  locationsPanel: { eyebrow: string; title: string; desc: string; viewAll: string };
   servicesCoreHeading: string;
   servicesAdditionalHeading: string;
   servicesItemsCore: NavItem[];
   servicesItemsAdditional: NavItem[];
-  locationsItems: NavItem[];
-  mobileLocationLinks: MobileLink[];
 };
 
 /* Single source of truth for the contact channels, matching the rest of the site. */
@@ -172,15 +167,6 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
                 {dict.services}<Caret />
               </button>
             </div>
-            <div
-              className={`nav-item has-dropdown${open === "locations" ? " open" : ""}`}
-              onMouseEnter={hoverOpen("locations")}
-              onMouseLeave={hoverClose}
-            >
-              <button className={buttonClass("locations")} type="button" onClick={handleTrigger("locations")}>
-                {dict.locations}<Caret />
-              </button>
-            </div>
             <div className="nav-item">
               <Link className={linkClass("/fleet")} href={localized("/fleet")}>{dict.fleet}</Link>
             </div>
@@ -253,50 +239,12 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
         </div>
       </div>
 
-      <div
-        className={`dropdown${open === "locations" ? " open" : ""}`}
-        onMouseEnter={() => {
-          if (leaveTimer.current) clearTimeout(leaveTimer.current);
-        }}
-        onMouseLeave={hoverClose}
-      >
-        <div className="dropdown-inner">
-          <div className="left">
-            <span className="eyebrow">{dict.locationsPanel.eyebrow}</span>
-            <span className="rule-gold" />
-            <h4>{dict.locationsPanel.title}</h4>
-            <p className="desc">{dict.locationsPanel.desc}</p>
-            <Link href={localized("/locations")} className="link-luxe">{dict.locationsPanel.viewAll} <span>→</span></Link>
-          </div>
-          {/* Individual location links are intentionally inactive for now — the
-              central Locations page (left panel) stays live. Final per-item
-              destinations will be wired in a later phase. */}
-          <div className="right">
-            {dict.locationsItems.map((item) => (
-              <div key={item.label} className="loc-static" aria-disabled="true">
-                <img className="ico" src={`/assets/icons/${item.icon}`} alt="" />
-                <div>
-                  <div className="label">{item.label}</div>
-                  <div className="meta">{item.meta}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       <div className={`mobile-nav${mobileOpen ? " open" : ""}`}>
         <Link className="mobile-link" href={localized("/about")}>{dict.about}</Link>
         <details>
           <summary>{dict.services}</summary>
           {[...dict.servicesItemsCore, ...dict.servicesItemsAdditional].map((s) => (
             <Link key={s.label} className="sub-link" href={localized(s.path)}>{s.label}</Link>
-          ))}
-        </details>
-        <details>
-          <summary>{dict.locations}</summary>
-          {dict.mobileLocationLinks.map((l) => (
-            <span key={l.label} className="sub-link disabled" aria-disabled="true">{l.label}</span>
           ))}
         </details>
         <Link className="mobile-link" href={localized("/fleet")}>{dict.fleet}</Link>

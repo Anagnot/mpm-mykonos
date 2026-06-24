@@ -55,12 +55,15 @@
     "security": {
       "title": "VIP Security & Secure Transportation Services in Mykonos",
       "description": "Discreet close protection officers, residential villa security and armoured secure transport in Mykonos. Vetted, multilingual, ex-military teams cleared for celebrity, corporate and diplomatic clientele."
+    },
+    "airportTransfers": {
+      "title": "Private Mykonos Airport Transfers | JMK Meet & Greet Chauffeur Service",
+      "description": "Private Mykonos airport transfers between JMK and hotels, villas and residences across the island. Premium van and minibus, professional chauffeurs, flight monitoring and 24/7 support."
     }
   },
   "header": {
     "about": "About us",
     "services": "Services",
-    "locations": "Locations",
     "fleet": "Fleet",
     "contact": "Contact us",
     "bookNow": "Book now",
@@ -76,45 +79,23 @@
       "desc": "Core transfer services across Mykonos, plus selected premium services through trusted partners, upon request.",
       "viewAll": "View all services"
     },
-    "locationsPanel": {
-      "eyebrow": "Where we serve",
-      "title": "Transfers across the whole island.",
-      "desc": "From JMK and the ports to hotels, villas, beach clubs and nightlife — our chauffeurs cover every corner of Mykonos.",
-      "viewAll": "View all locations"
-    },
     "servicesCoreHeading": "Core Transfer Services",
     "servicesAdditionalHeading": "Additional Premium Services",
     "servicesItemsCore": [
-      { "path": "/services/per-route-transfers", "icon": "icon-plane.svg", "label": "Airport Transfers", "meta": "JMK arrivals & departures" },
-      { "path": "/services/per-route-transfers", "icon": "icon-yacht.svg", "label": "Port Transfers", "meta": "Old & New Port · ferries · yachts" },
+      { "path": "/services/airport-transfers", "icon": "icon-plane.svg", "label": "Mykonos Airport Transfers", "meta": "JMK arrivals & departures" },
+      { "path": "/services/per-route-transfers", "icon": "icon-yacht.svg", "label": "Mykonos Port Transfers", "meta": "Old & New Port · ferries · yachts" },
       { "path": "/services/per-route-transfers", "icon": "icon-pin.svg", "label": "Hotel & Villa Transfers", "meta": "Island-wide pickup & drop-off" },
-      { "path": "/services/private-chauffeur", "icon": "icon-star.svg", "label": "Private Chauffeur", "meta": "VIP driver · whole stay" },
+      { "path": "/services/private-chauffeur", "icon": "icon-star.svg", "label": "Private Chauffeur Service", "meta": "VIP driver · whole stay" },
       { "path": "/services/on-disposal-driver", "icon": "icon-clock.svg", "label": "On-Disposal Driver", "meta": "By the hour, half-day or day" },
-      { "path": "/services/on-disposal-driver", "icon": "icon-diamond.svg", "label": "Beach Club & Nightlife Transfers", "meta": "With return pickup" },
-      { "path": "/services/per-route-transfers", "icon": "icon-van.svg", "label": "Group & Event Transfers", "meta": "Minibus · weddings · groups" }
+      { "path": "/services/on-disposal-driver", "icon": "icon-diamond.svg", "label": "Beach Club & Restaurant Transfers", "meta": "Nammos · Scorpios · with return" },
+      { "path": "/services/on-disposal-driver", "icon": "icon-star.svg", "label": "Nightlife Transfers", "meta": "Late-night pickups & returns" },
+      { "path": "/services/per-route-transfers", "icon": "icon-van.svg", "label": "Group, Wedding & Event Transfers", "meta": "Minibus · weddings · groups" }
     ],
     "servicesItemsAdditional": [
       { "path": "/services/sea-transfers", "icon": "icon-yacht.svg", "label": "Sea & Yacht Coordination", "meta": "Through partners · on request" },
       { "path": "/services/air-transfers", "icon": "icon-helicopter.svg", "label": "Private Air Coordination", "meta": "Through partners · on request" },
       { "path": "/services/vip-security", "icon": "icon-shield.svg", "label": "Security Assistance", "meta": "Guests · villas · events" },
       { "path": "/services/luggage-storage", "icon": "icon-luggage.svg", "label": "Luggage Support", "meta": "Pickup · storage · delivery" }
-    ],
-    "locationsItems": [
-      { "path": "/locations#jmk", "icon": "icon-plane.svg", "label": "Mykonos Airport Transfers", "meta": "JMK arrivals & departures" },
-      { "path": "/locations#new-port", "icon": "icon-yacht.svg", "label": "Mykonos Port Transfers", "meta": "Old & New Port · Tourlos" },
-      { "path": "/locations#villas", "icon": "icon-diamond.svg", "label": "Hotels & Villas", "meta": "Island-wide" },
-      { "path": "/locations#town", "icon": "icon-pin.svg", "label": "Mykonos Town / Chora", "meta": "Little Venice · Chora" },
-      { "path": "/locations#nammos", "icon": "icon-star.svg", "label": "Beach Clubs & Restaurants", "meta": "Nammos · Scorpios · more" },
-      { "path": "/locations#scorpios", "icon": "icon-clock.svg", "label": "Nightlife Transfers", "meta": "Late-night pickups" },
-      { "path": "/locations#villas", "icon": "icon-star.svg", "label": "Wedding & Event Venues", "meta": "Estates · hotels · villas" },
-      { "path": "/locations#new-port", "icon": "icon-yacht.svg", "label": "Sea & Air Connection Points", "meta": "Yacht & helipad · on request" }
-    ],
-    "mobileLocationLinks": [
-      { "path": "/locations#jmk", "label": "Mykonos Airport Transfers" },
-      { "path": "/locations#new-port", "label": "Mykonos Port Transfers" },
-      { "path": "/locations#villas", "label": "Hotels & Villas" },
-      { "path": "/locations#nammos", "label": "Beach Clubs & Restaurants" },
-      { "path": "/locations#scorpios", "label": "Nightlife Transfers" }
     ]
   },
   "footer": {
@@ -133,14 +114,7 @@
       { "path": "/services/sea-transfers", "label": "Sea & Yacht (on request)" },
       { "path": "/services/air-transfers", "label": "Private Air (on request)" }
     ],
-    "locationLinks": [
-      { "path": "/locations#jmk", "label": "JMK Airport" },
-      { "path": "/locations#old-port", "label": "Old Port · Chora" },
-      { "path": "/locations#new-port", "label": "New Port · Tourlos" },
-      { "path": "/locations#town", "label": "Mykonos Town" },
-      { "path": "/locations#nammos", "label": "Nammos · Psarrou" },
-      { "path": "/locations#scorpios", "label": "Scorpios · Paraga" }
-    ],
+    "locationLinks": [],
     "viewAll": "View all 30 →",
     "aboutUs": "About us",
     "bookNow": "Book now",
@@ -172,6 +146,15 @@
       "primary": "Request a Transfer",
       "secondary": "Explore Our Fleet",
       "scrollHint": "Scroll"
+    },
+    "about": {
+      "eyebrow": "About Us",
+      "title": "More than a transfer.<br />A reliable local partner in <em>Mykonos</em>.",
+      "body": [
+        "Mykonos Precious Moments provides premium private transportation across the island, combining professional chauffeurs, local knowledge and carefully selected vehicles.",
+        "From the first message to the final drop-off, our focus is simple: comfort, reliability and personal service."
+      ],
+      "cta": "Learn More About Us"
     },
     "promise": [
       { "icon": "icon-diamond.svg", "title": "Premium Mercedes Fleet", "body": "Mercedes-Benz Vito premium van and Sprinter luxury minibus for private transfers, airport arrivals, port pickups and group transportation." },
@@ -215,22 +198,6 @@
       "eyebrow": "A Note From a Guest",
       "quote": "From JMK arrivals to a midnight transfer back from Scorpios on our final night — Alexandros and his team handled every moment as if it were their own holiday.",
       "attribution": "<b>Helena & Marc</b> · 5 nights · Cavo Tagoo"
-    },
-    "locations": {
-      "eyebrow": "Transfer routes",
-      "title": "Transfers across <em>Mykonos</em>.",
-      "lead": "From JMK Airport and Mykonos Port to hotels, villas, beach clubs, restaurants and private events, our chauffeurs cover the island with local knowledge and reliable timing.",
-      "items": [
-        { "path": "/locations#jmk", "name": "Mykonos Airport Transfers", "meta": "JMK arrivals and departures" },
-        { "path": "/locations#new-port", "name": "Mykonos Port Transfers", "meta": "Old Port, New Port / Tourlos, ferries and yacht pickup points" },
-        { "path": "/locations#villas", "name": "Hotel & Villa Transfers", "meta": "Island-wide pickup and drop-off service" },
-        { "path": "/locations#town", "name": "Mykonos Town Transfers", "meta": "Chora, Little Venice, restaurants and shopping areas" },
-        { "path": "/locations#nammos", "name": "Beach Club & Restaurant Transfers", "meta": "Nammos, Scorpios, Super Paradise, Principote, Psarrou, Paraga and more" },
-        { "path": "/locations#scorpios", "name": "Nightlife Transfers", "meta": "Late-night pickups and returns across the island" },
-        { "path": "/locations#villas", "name": "Group & Event Transfers", "meta": "Weddings, private parties, corporate groups and VIP guests" },
-        { "path": "/locations#new-port", "name": "Sea & Air Connection Points", "meta": "Yacht, helipad and private air connections, upon request" }
-      ],
-      "cta": "Request a Route"
     },
     "cta": {
       "eyebrow": "Ready when you are",
@@ -574,6 +541,39 @@
       "title": "Tell us about your <em>itinerary</em>.",
       "primary": "Plan a journey",
       "secondaryPhone": "+30 6973 564477"
+    },
+    "airportTransfers": {
+      "header": {
+        "eyebrow": "Mykonos Airport · JMK",
+        "title": "Private Mykonos<br />Airport <em>Transfers</em>.",
+        "sub": "A smooth and comfortable start or finish to your stay in Mykonos."
+      },
+      "body": [
+        "Arriving at Mykonos International Airport should be the easiest part of your journey.",
+        "Our private airport transfer service connects JMK Airport with hotels, villas, private residences and destinations across the island.",
+        "Your chauffeur will follow the confirmed arrival details, meet the group at the agreed pickup point and assist with the journey to the final destination.",
+        "For departure transfers, pickup is arranged according to the flight time, the location of the accommodation and the expected traffic conditions.",
+        "Whether you are travelling as a couple, a family or a larger group, we select the most suitable vehicle according to the number of passengers and luggage."
+      ],
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Private pickup from or to Mykonos International Airport",
+        "Hotel, villa and private accommodation transfers",
+        "Premium van and minibus options",
+        "Suitable for individuals, families and groups",
+        "Space for passenger luggage",
+        "Professional chauffeur service",
+        "Flight details monitored when provided",
+        "24/7 communication and transfer support"
+      ],
+      "cta": {
+        "eyebrow": "Ready when you are",
+        "title": "Request your <em>airport transfer</em>.",
+        "primary": "Request an Airport Transfer",
+        "primaryPath": "/book?svc=airport",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to request a private airport transfer in Mykonos."
+      }
     },
     "air": {
       "header": { "eyebrow": "Private air transfers", "title": "Above the <em>Aegean</em>.<br />On your schedule.", "sub": "Helicopter transfers to Athens, private jet charters across the Mediterranean, and same-day island-hopping by air — coordinated through MPM's trusted aviation partners, on request." },

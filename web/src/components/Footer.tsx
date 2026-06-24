@@ -33,13 +33,15 @@ export default function Footer({ lang, dict }: { lang: string; dict: FooterDict 
             <Link key={l.path} href={localized(l.path)}>{l.label}</Link>
           ))}
         </div>
-        <div className="col">
-          <h6>{dict.locationsHeading}</h6>
-          {dict.locationLinks.map((l) => (
-            <Link key={l.path} href={localized(l.path)}>{l.label}</Link>
-          ))}
-          <Link href={localized("/locations")}>{dict.viewAll}</Link>
-        </div>
+        {dict.locationLinks.length > 0 && (
+          <div className="col">
+            <h6>{dict.locationsHeading}</h6>
+            {dict.locationLinks.map((l) => (
+              <Link key={l.path} href={localized(l.path)}>{l.label}</Link>
+            ))}
+            <Link href={localized("/locations")}>{dict.viewAll}</Link>
+          </div>
+        )}
         <div className="col">
           <h6>{dict.contactHeading}</h6>
           <a href="tel:+306973564477">+30 6973 564477</a>
