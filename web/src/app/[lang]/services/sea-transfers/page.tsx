@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ServiceDetailLayout from "@/components/ServiceDetailLayout";
+import LandingTransferLayout from "@/components/LandingTransferLayout";
 import { getDictionary, hasLocale } from "../../dictionaries";
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -15,18 +15,14 @@ export default async function SeaTransfersPage({ params }: { params: Promise<{ l
   if (!hasLocale(lang)) notFound();
   const d = (await getDictionary(lang)).services.sea;
   return (
-    <ServiceDetailLayout
+    <LandingTransferLayout
       lang={lang}
       bg="/uploads/site/sea-transfer.jpg"
       header={d.header}
-      intro={d.intro}
-      row1={d.row1}
-      bullets={d.bullets}
-      tilesSection={d.routes}
-      tiles={d.tiles}
-      row2={d.row2}
+      body={d.body}
+      highlightsHeading={d.highlightsHeading}
+      highlights={d.highlights}
       cta={d.cta}
-      ctaSecondary={{ label: "+30 6973 564477", href: "tel:+306973564477" }}
     />
   );
 }

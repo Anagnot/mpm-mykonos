@@ -4,6 +4,7 @@ import { CtaStrip, Eyebrow, PageHeader, RuleGold } from "@/components/ui";
 const WHATSAPP_NUMBER = "306973564477";
 
 export type LandingHeader = { eyebrow: string; title: string; sub: string };
+export type LandingNote = { heading: string; body: string };
 export type LandingCta = {
   eyebrow: string;
   title: string;
@@ -25,6 +26,7 @@ export default function LandingTransferLayout({
   body,
   highlightsHeading,
   highlights,
+  note,
   cta,
 }: {
   lang: string;
@@ -33,6 +35,7 @@ export default function LandingTransferLayout({
   body: string[];
   highlightsHeading: string;
   highlights: string[];
+  note?: LandingNote;
   cta: LandingCta;
 }) {
   const L = (p: string) => `/${lang}${p}`;
@@ -69,6 +72,18 @@ export default function LandingTransferLayout({
           </ul>
         </div>
       </section>
+
+      {note && (
+        <section className="section reveal">
+          <div className="container" style={{ maxWidth: 880 }}>
+            <div className="landing-note">
+              <Eyebrow>{note.heading}</Eyebrow>
+              <RuleGold />
+              <p className="lead">{note.body}</p>
+            </div>
+          </div>
+        </section>
+      )}
 
       <CtaStrip
         eyebrow={cta.eyebrow}

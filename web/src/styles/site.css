@@ -502,6 +502,22 @@ html[lang="en"] { --header-h: 110px; }
 .service-tile h3 { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 300; line-height: 1.15; margin: 0; }
 .service-tile p { color: var(--fg-secondary); font-size: 0.95rem; line-height: 1.6; margin: 0; }
 .service-tile .link-luxe { margin-top: 8px; padding-top: 4px; }
+/* Signature (featured) service — On-Disposal Chauffeur gets extra prominence */
+.service-tile.is-featured { border-top-color: var(--color-gold); border-top-width: 2px; }
+.service-tile.is-featured .icon { color: var(--color-gold); }
+.tile-badge {
+  align-self: flex-start;
+  font-size: 10px;
+  letter-spacing: var(--track-wider);
+  text-transform: uppercase;
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  border-radius: 999px;
+  padding: 3px 11px;
+  margin-bottom: -2px;
+}
+.dropdown .right a.is-featured .label { color: var(--color-gold); }
+.dropdown .right a.is-featured .ico { color: var(--color-gold); }
 
 /* ============================================================
    FLEET GRID
@@ -866,6 +882,11 @@ html[lang="en"] { --header-h: 110px; }
 /* Transfer landing page: main copy + highlights checklist */
 .landing-copy { display: flex; flex-direction: column; gap: 18px; }
 .landing-copy .lead { max-width: none; }
+.landing-note {
+  border-left: 2px solid var(--color-gold);
+  padding: 4px 0 4px 26px;
+}
+.landing-note .lead { max-width: none; margin-top: 12px; }
 .highlight-list {
   list-style: none;
   padding: 0;

@@ -6,7 +6,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 type DropdownKey = "services";
 
-type NavItem = { path: string; icon: string; label: string; meta: string };
+type NavItem = { path: string; icon: string; label: string; meta: string; featured?: boolean };
 
 type HeaderDict = {
   about: string;
@@ -215,7 +215,7 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
           <div className="right">
             <div style={groupLabelStyle}>{dict.servicesCoreHeading}</div>
             {dict.servicesItemsCore.map((item) => (
-              <Link key={item.label} href={localized(item.path)}>
+              <Link key={item.label} href={localized(item.path)} className={item.featured ? "is-featured" : undefined}>
                 <img className="ico" src={`/assets/icons/${item.icon}`} alt="" />
                 <div>
                   <div className="label">{item.label}</div>
