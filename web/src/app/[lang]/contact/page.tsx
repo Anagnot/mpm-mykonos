@@ -51,15 +51,6 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
                 <span className="v">{dict.hours.v}</span>
                 <span className="sub">{dict.hours.sub}</span>
               </div>
-              <div className="contact-item">
-                <span className="k">{dict.follow}</span>
-                <div className="social-row">
-                  <a href="https://www.instagram.com/mpm.mykonospreciousmoments/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4}><rect x="3" y="3" width="18" height="18" rx="4" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg></a>
-                  <a href="https://www.facebook.com/profile.php?id=100090545221103" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4}><path d="M16 8h-3a1 1 0 0 0-1 1v3" /><path d="M9 12h6" /><path d="M12 12v8" /><rect x="3" y="3" width="18" height="18" rx="4" /></svg></a>
-                  <a href="https://t.me/+306973564477" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinejoin="round"><path d="M22 4 12 14" /><path d="m22 4-7 17-3-8-8-3z" /></svg></a>
-                  <a href="mailto:info@mykonospreciousmoments.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg></a>
-                </div>
-              </div>
             </div>
 
             <div>

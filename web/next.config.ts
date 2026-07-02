@@ -3,8 +3,17 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["*.loca.lt", "*.trycloudflare.com"],
   async redirects() {
-    // Merged/retired service pages → their new canonical landing pages.
+    // Greek is disabled for now — permanently redirect all /el URLs to the
+    // English equivalents so stale links and indexed pages resolve (and
+    // search engines drop the Greek pages). Listed first so /el paths never
+    // reach the service-page rules below.
     return [
+      {
+        source: "/el/:path*",
+        destination: "/en/:path*",
+        permanent: true,
+      },
+      // Merged/retired service pages → their new canonical landing pages.
       {
         source: "/:lang(en|el)/services/private-chauffeur",
         destination: "/:lang/services/on-disposal-chauffeur",

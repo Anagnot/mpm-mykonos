@@ -134,8 +134,7 @@
     "learnMore": "Learn more",
     "viewAll": "View all",
     "callConcierge": "Call concierge",
-    "phone": "+30 6973 564477",
-    "languageSwitch": { "en": "EN", "el": "ΕΛ" }
+    "phone": "+30 6973 564477"
   },
   "backToTop": "Back to top",
   "cookies": {
@@ -359,15 +358,13 @@
       "sub": "The phone rings on a real desk in Mykonos Town, day and night. Most enquiries are answered inside the hour."
     },
     "items": [
-      { "k": "Concierge desk", "v": "+30 6973 564477", "href": "tel:+306973564477", "sub": "Greek & English · 24 hours · same number on WhatsApp, Viber & Telegram." },
+      { "k": "Concierge desk", "v": "+30 6973 564477", "href": "tel:+306973564477", "sub": "Greek & English · 24 hours · same number on WhatsApp and Viber." },
       { "k": "WhatsApp", "v": "+30 6973 564477", "href": "https://wa.me/306973564477", "external": true, "sub": "Tap to chat — fastest response, day or night." },
       { "k": "Viber", "v": "+30 6973 564477", "href": "viber://chat?number=%2B306973564477", "sub": "Open Viber to message us directly." },
-      { "k": "Telegram", "v": "+30 6973 564477", "href": "https://t.me/+306973564477", "external": true, "sub": "Discreet messaging for VIP guests." },
       { "k": "Email", "v": "info@mykonospreciousmoments.com", "href": "mailto:info@mykonospreciousmoments.com", "sub": "For tailor-made itineraries, multi-day bookings, or anything you'd rather put in writing." }
     ],
     "office": { "k": "Office", "v": "Matogianni 12, Chora<br />Mykonos 84600 · Greece", "sub": "By appointment only. The team is mostly on the road — please call ahead." },
-    "hours": { "k": "Hours", "v": "24 / 7 · all year", "sub": "Including Greek public holidays. Especially Greek public holidays." },
-    "follow": "Follow",
+    "hours": { "k": "Hours", "v": "24 / 7 · all year", "sub": "Available 24/7 throughout the year, including public holidays." },
     "form": {
       "eyebrow": "Send a note",
       "title": "We reply within the <em>hour</em>.",
@@ -375,16 +372,10 @@
       "fullName": "Full Name",
       "email": "Email Address",
       "phone": "Phone / WhatsApp",
-      "topic": "Topic",
-      "topicOptions": [
-        "General enquiry",
-        "New booking",
-        "Existing booking",
-        "Hotel / villa partnership",
-        "Press & media"
-      ],
+      "topic": "How can we help?",
+      "topicPlaceholder": "New booking, general enquiry, partnership or anything else…",
       "message": "Message",
-      "messagePlaceholder": "Dates, group size, anything we should know...",
+      "messagePlaceholder": "Tell us how we can help…",
       "privacy": "Your details are confidential and used only to reply to your message. We never share them.",
       "submit": "Send message",
       "sent": "Message sent · We'll be in touch"
@@ -423,8 +414,8 @@
     ],
     "airSeaTitle": "Premium partner arrangements — <em>upon request</em>.",
     "airSeaRows": [
-      { "id": "helicopter", "tag": "Air · Partner aviation", "title": "Airbus H145 Helicopter", "body": "Mykonos to Athens in 45 minutes. Island hops to Santorini, Paros, or Crete on short notice. FBO & customs handled by our aviation team.", "specs": [["Seats", "6"], ["Cruise", "240 km/h"], ["Range", "680 km"], ["Pad", "JMK · Villa"]], "img": "/uploads/site/helicopter.jpg" },
-      { "id": "yacht", "tag": "Sea · Partner charter", "title": "Sunseeker 76 Yacht", "body": "A 76-foot day-and-weekend cruiser with full crew. Day trips to Delos, the small Cyclades, or a slow sunset around the southern coast.", "specs": [["Guests", "10"], ["Cabins", "4"], ["Crew", "3"], ["Base", "Old Port"]], "img": "/uploads/site/sea-transfer.jpg" }
+      { "id": "helicopter", "tag": "Air · Partner aviation", "title": "Airbus H145 Helicopter", "body": "A premium helicopter option for fast and flexible travel between Mykonos and selected destinations. Ideal for guests seeking private air transportation, reduced travel time and seamless coordination with ground transfers. Availability and final arrangements are confirmed upon request through our aviation partners.", "specs": [["Seats", "6"], ["Cruise", "240 km/h"], ["Range", "680 km"], ["Pad", "JMK · Villa"]], "img": "/uploads/site/helicopter.jpg" },
+      { "id": "yacht", "tag": "Sea · Partner charter", "title": "Sunseeker 76 Yacht", "body": "A refined private yacht option for day trips, coastal cruising and tailor-made sea experiences around Mykonos and the Cyclades. Suitable for private groups seeking comfort, privacy and personalised planning. Availability, itinerary and final arrangements are confirmed upon request through our selected partners.", "specs": [["Guests", "10"], ["Cabins", "4"], ["Crew", "3"], ["Base", "Old Port"]], "img": "/uploads/site/sea-transfer.jpg" }
     ],
     "standards": {
       "eyebrow": "Across the fleet",
