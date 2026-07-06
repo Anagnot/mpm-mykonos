@@ -1,30 +1,31 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const locales = ["en", "el"] as const;
+// Greek is disabled for now — English is the only served locale. The
+// accept-language negotiation that used to live here can come back when
+// the Greek version is maintained again.
+const locales = ["en"] as const;
 const defaultLocale = "en";
-
-function pickLocale(request: NextRequest): string {
-  const header = request.headers.get("accept-language") ?? "";
-  const preferred = header
-    .split(",")
-    .map((part) => part.split(";")[0].trim().toLowerCase())
-    .find((tag) => locales.some((l) => tag === l || tag.startsWith(`${l}-`)));
-  if (!preferred) return defaultLocale;
-  const match = locales.find((l) => preferred === l || preferred.startsWith(`${l}-`));
-  return match ?? defaultLocale;
-}
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Retired Greek URLs → their English counterparts. next.config.ts holds the
+  // canonical 308 for these; this is a safety net in case a /el path reaches
+  // the proxy anyway, so it can never be double-prefixed to /en/el/...
+  if (pathname === "/el" || pathname.startsWith("/el/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname.replace(/^\/el/, `/${defaultLocale}`) || `/${defaultLocale}`;
+    return NextResponse.redirect(url, 308);
+  }
+
   const hasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );
   if (hasLocale) return;
 
-  const locale = pickLocale(request);
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
+  url.pathname = `/${defaultLocale}${pathname === "/" ? "" : pathname}`;
   return NextResponse.redirect(url);
 }
 

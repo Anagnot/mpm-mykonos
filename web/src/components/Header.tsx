@@ -6,7 +6,7 @@ import { useEffect, useRef, useState, type CSSProperties } from "react";
 
 type DropdownKey = "services";
 
-type NavItem = { path: string; icon: string; label: string; meta: string };
+type NavItem = { path: string; icon: string; label: string; meta: string; featured?: boolean };
 
 type HeaderDict = {
   about: string;
@@ -64,7 +64,7 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
 
   const prefix = `/${lang}`;
   const localized = (p: string) => `${prefix}${p}`;
-  const showContactBar = lang === "en" && !!dict.contactBar;
+  const showContactBar = !!dict.contactBar;
 
   useEffect(() => {
     const onScroll = () => setSolid(window.scrollY > 80);
@@ -128,13 +128,6 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
   const linkClass = (path: string) => `nav-link${isActive(path) ? " active" : ""}`;
   const buttonClass = (key: DropdownKey) => `nav-link${isActive("/" + key) ? " active" : ""}`;
 
-  const otherLocale = lang === "en" ? "el" : "en";
-  const switchHref = (() => {
-    const rest = pathname.replace(/^\/(en|el)/, "");
-    return `/${otherLocale}${rest || ""}`;
-  })();
-  const switchLabel = otherLocale === "el" ? "ΕΛ" : "EN";
-
   return (
     <>
       <header className={`site-header${showContactBar ? " has-topbar" : ""}${solid || mobileOpen ? " solid" : ""}`}>
@@ -172,9 +165,6 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
             </div>
             <div className="nav-item">
               <Link className={linkClass("/contact")} href={localized("/contact")}>{dict.contact}</Link>
-            </div>
-            <div className="nav-item">
-              <Link className="nav-link lang-switch" href={switchHref}>{switchLabel}</Link>
             </div>
           </nav>
           <div className="header-actions">
@@ -215,7 +205,7 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
           <div className="right">
             <div style={groupLabelStyle}>{dict.servicesCoreHeading}</div>
             {dict.servicesItemsCore.map((item) => (
-              <Link key={item.label} href={localized(item.path)}>
+              <Link key={item.label} href={localized(item.path)} className={item.featured ? "is-featured" : undefined}>
                 <img className="ico" src={`/assets/icons/${item.icon}`} alt="" />
                 <div>
                   <div className="label">{item.label}</div>
@@ -249,7 +239,6 @@ export default function Header({ lang, dict }: { lang: string; dict: HeaderDict 
         </details>
         <Link className="mobile-link" href={localized("/fleet")}>{dict.fleet}</Link>
         <Link className="mobile-link" href={localized("/contact")}>{dict.contact}</Link>
-        <Link className="mobile-link lang-switch" href={switchHref}>{switchLabel}</Link>
         <Link className="btn btn-primary mobile-cta" href={localized("/book")}>{dict.bookNow}</Link>
       </div>
     </>

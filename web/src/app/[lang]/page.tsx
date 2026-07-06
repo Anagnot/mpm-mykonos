@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import { Eyebrow, RichText, RuleGold } from "@/components/ui";
 import { getDictionary, hasLocale } from "./dictionaries";
 
-const heroBg = "/uploads/site/chauffeur-door.jpg";
+const heroBg = "/uploads/site/hero-home.jpg";
+
+type ServiceTile = { id: string; path: string; icon: string; title: string; body: string; featured?: boolean };
 
 export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -72,8 +74,9 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
             <RuleGold />
           </div>
           <div className="services-grid reveal-stagger" style={{ marginTop: 18 }}>
-            {dict.services.core.map((s) => (
-              <Link key={s.id} className="service-tile" href={L(s.path)}>
+            {(dict.services.core as ServiceTile[]).map((s) => (
+              <Link key={s.id} className={`service-tile${s.featured ? " is-featured" : ""}`} href={L(s.path)}>
+                {s.featured && <span className="tile-badge">Signature</span>}
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>

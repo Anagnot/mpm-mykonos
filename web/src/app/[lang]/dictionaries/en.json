@@ -28,33 +28,41 @@
       "title": "Services · MPM · Mykonos Precious Moments",
       "description": "Private airport, port, hotel, villa, beach club and event transfers in Mykonos, plus private chauffeur and on-disposal driver — with sea, air, security and luggage support through trusted partners, upon request."
     },
-    "air": {
-      "title": "Private Air Transfers & Island Air Tours in Mykonos | Helicopter & Jet Services",
-      "description": "Helicopter transfers to Athens, private jet charters anywhere in the Mediterranean, and aerial island-hopping from Mykonos. FBO, customs, and ground transport handled end to end."
+    "port": {
+      "title": "Private Mykonos Port Transfers | Old Port, New Port & Tourlos",
+      "description": "Private port transfers in Mykonos — Old Port, New Port at Tourlos and yacht or ferry meeting points to hotels, villas and across the island. Premium van and minibus, professional chauffeurs, 24/7 support."
     },
-    "luggage": {
-      "title": "Luggage Storage & Transfer Services in Mykonos",
-      "description": "Same-day luggage storage and transfers across Mykonos. Climate-controlled storage in Mykonos Town, pickup and drop-off island-wide, direct hand-off at JMK airport."
+    "hotelVilla": {
+      "title": "Hotel & Villa Transfers in Mykonos | Door-to-Door Private Transportation",
+      "description": "Private hotel, resort and villa transfers across Mykonos — door-to-door transportation with professional chauffeurs, airport and port connections, one-way and return journeys."
     },
-    "disposal": {
-      "title": "Mykonos On Disposal Driver Service | Luxury on Demand Chauffeur Transportation",
-      "description": "Hire a professional driver and a high-end vehicle on disposal in Mykonos — by the hour, half-day or full 24 hours. Discreet, on-call, and entirely at your service."
+    "onDisposal": {
+      "title": "On-Disposal Chauffeur Service in Mykonos | Private Chauffeur & Vehicle",
+      "description": "A professional chauffeur and premium vehicle reserved exclusively for you in Mykonos — by the hour, half-day, full day or multiple days. A flexible schedule between villas, beaches, restaurants and events."
     },
-    "perRoute": {
-      "title": "Per Route Transfers in Mykonos | Luxury Vehicles with Local Expertise",
-      "description": "Punctual, fixed-fare luxury transfers in Mykonos — JMK airport, the Old and New Ports, hotels, villas, and the island's beaches. Tracked flights, multilingual chauffeurs, all-inclusive pricing."
+    "beachNightlife": {
+      "title": "Beach Club, Restaurant & Nightlife Transfers in Mykonos",
+      "description": "Private transfers between hotels, villas, beach clubs, restaurants, bars and nightlife destinations across Mykonos. One-way, scheduled return and multi-venue transportation with premium van and minibus options."
     },
-    "chauffeur": {
-      "title": "Hire a Private Chauffeur in Mykonos | VIP Driver 24 hours",
-      "description": "A single VIP chauffeur and a dedicated Mercedes for the length of your stay in Mykonos. Multilingual, NDA-signed, available 24 hours a day."
+    "groupEvent": {
+      "title": "Group, Wedding & Event Transfers in Mykonos | Coordinated Transportation",
+      "description": "Coordinated private transportation for weddings, families, corporate groups and private events in Mykonos. Airport and port arrivals, hotel and villa pickups, luxury minibus and multiple-vehicle coordination."
     },
     "sea": {
-      "title": "Mykonos Sea Transfers & Luxury Yacht Tours",
-      "description": "Private sea transfers, day charters and sunset cruises from Mykonos to Delos, Rinia and the small Cyclades. Sunseeker yachts, full crew, private chef and sommelier on request."
+      "title": "Sea & Yacht Coordination in Mykonos | Through Trusted Partners",
+      "description": "Sea transfer and yacht coordination in Mykonos through trusted partners — private sea transfers, yacht enquiries and ground transportation between accommodation, port and vessel, on request."
+    },
+    "air": {
+      "title": "Private Air & Helicopter Coordination | Through Trusted Partners",
+      "description": "Private aviation and helicopter coordination in Mykonos through trusted partners — connections between Mykonos, Athens and beyond, with ground transfers to airports and helipads, on request."
     },
     "security": {
-      "title": "VIP Security & Secure Transportation Services in Mykonos",
-      "description": "Discreet close protection officers, residential villa security and armoured secure transport in Mykonos. Vetted, multilingual, ex-military teams cleared for celebrity, corporate and diplomatic clientele."
+      "title": "Private Security Assistance in Mykonos | Discreet Support",
+      "description": "Discreet private security assistance in Mykonos through authorised partners — personal, villa and event security, coordinated alongside private chauffeur transportation. Confidential handling, on request."
+    },
+    "luggage": {
+      "title": "Luggage Transfer & Support in Mykonos | Pickup, Storage & Delivery",
+      "description": "Practical luggage support in Mykonos — pickup, transportation, storage coordination and delivery between selected locations, combined with airport, port, hotel or villa transfers, on request."
     },
     "airportTransfers": {
       "title": "Private Mykonos Airport Transfers | JMK Meet & Greet Chauffeur Service",
@@ -83,13 +91,11 @@
     "servicesAdditionalHeading": "Additional Premium Services",
     "servicesItemsCore": [
       { "path": "/services/airport-transfers", "icon": "icon-plane.svg", "label": "Mykonos Airport Transfers", "meta": "JMK arrivals & departures" },
-      { "path": "/services/per-route-transfers", "icon": "icon-yacht.svg", "label": "Mykonos Port Transfers", "meta": "Old & New Port · ferries · yachts" },
-      { "path": "/services/per-route-transfers", "icon": "icon-pin.svg", "label": "Hotel & Villa Transfers", "meta": "Island-wide pickup & drop-off" },
-      { "path": "/services/private-chauffeur", "icon": "icon-star.svg", "label": "Private Chauffeur Service", "meta": "VIP driver · whole stay" },
-      { "path": "/services/on-disposal-driver", "icon": "icon-clock.svg", "label": "On-Disposal Driver", "meta": "By the hour, half-day or day" },
-      { "path": "/services/on-disposal-driver", "icon": "icon-diamond.svg", "label": "Beach Club & Restaurant Transfers", "meta": "Nammos · Scorpios · with return" },
-      { "path": "/services/on-disposal-driver", "icon": "icon-star.svg", "label": "Nightlife Transfers", "meta": "Late-night pickups & returns" },
-      { "path": "/services/per-route-transfers", "icon": "icon-van.svg", "label": "Group, Wedding & Event Transfers", "meta": "Minibus · weddings · groups" }
+      { "path": "/services/port-transfers", "icon": "icon-yacht.svg", "label": "Mykonos Port Transfers", "meta": "Old Port · New Port · Tourlos" },
+      { "path": "/services/hotel-villa-transfers", "icon": "icon-pin.svg", "label": "Hotel & Villa Transfers", "meta": "Door-to-door, island-wide" },
+      { "path": "/services/on-disposal-chauffeur", "icon": "icon-star.svg", "label": "On-Disposal Chauffeur Service", "meta": "Signature · your chauffeur, your day", "featured": true },
+      { "path": "/services/beach-nightlife-transfers", "icon": "icon-diamond.svg", "label": "Beach Club, Restaurant & Nightlife Transfers", "meta": "Day & night · with return" },
+      { "path": "/services/group-event-transfers", "icon": "icon-van.svg", "label": "Group, Wedding & Event Transfers", "meta": "Minibus · weddings · groups" }
     ],
     "servicesItemsAdditional": [
       { "path": "/services/sea-transfers", "icon": "icon-yacht.svg", "label": "Sea & Yacht Coordination", "meta": "Through partners · on request" },
@@ -105,12 +111,12 @@
     "locationsHeading": "Locations",
     "contactHeading": "Contact",
     "servicesLinks": [
-      { "path": "/services/per-route-transfers", "label": "Airport Transfers" },
-      { "path": "/services/per-route-transfers", "label": "Port Transfers" },
-      { "path": "/services/per-route-transfers", "label": "Hotel & Villa Transfers" },
-      { "path": "/services/private-chauffeur", "label": "Private Chauffeur" },
-      { "path": "/services/on-disposal-driver", "label": "On-Disposal Driver" },
-      { "path": "/services/per-route-transfers", "label": "Group & Event Transfers" },
+      { "path": "/services/airport-transfers", "label": "Airport Transfers" },
+      { "path": "/services/port-transfers", "label": "Port Transfers" },
+      { "path": "/services/hotel-villa-transfers", "label": "Hotel & Villa Transfers" },
+      { "path": "/services/on-disposal-chauffeur", "label": "On-Disposal Chauffeur" },
+      { "path": "/services/beach-nightlife-transfers", "label": "Beach, Restaurant & Nightlife" },
+      { "path": "/services/group-event-transfers", "label": "Group, Wedding & Event" },
       { "path": "/services/sea-transfers", "label": "Sea & Yacht (on request)" },
       { "path": "/services/air-transfers", "label": "Private Air (on request)" }
     ],
@@ -128,8 +134,7 @@
     "learnMore": "Learn more",
     "viewAll": "View all",
     "callConcierge": "Call concierge",
-    "phone": "+30 6973 564477",
-    "languageSwitch": { "en": "EN", "el": "ΕΛ" }
+    "phone": "+30 6973 564477"
   },
   "backToTop": "Back to top",
   "cookies": {
@@ -167,12 +172,12 @@
       "lead": "From airport and port arrivals to hotel, villa, beach club and event transfers, our Mercedes van and minibus services are designed for comfort, privacy and reliability across Mykonos. For guests who need more, we can also coordinate selected premium services through trusted partners, upon request.",
       "coreHeading": "Core Transfer Services",
       "core": [
-        { "id": "airport", "path": "/services/per-route-transfers", "icon": "icon-plane.svg", "title": "Airport Transfers", "body": "Private arrivals and departures from JMK Airport with professional chauffeur service, luggage assistance and clear communication." },
-        { "id": "port", "path": "/services/per-route-transfers", "icon": "icon-yacht.svg", "title": "Port Transfers", "body": "Transfers from and to the Old Port, New Port / Tourlos, yachts, ferries and cruise arrival points." },
-        { "id": "hotel-villa", "path": "/services/per-route-transfers", "icon": "icon-pin.svg", "title": "Hotel & Villa Transfers", "body": "Private transportation to hotels, villas, Airbnb properties and private residences across Mykonos." },
-        { "id": "chauffeur", "path": "/services/private-chauffeur", "icon": "icon-star.svg", "title": "Private Chauffeur / On-Disposal Driver", "body": "A vehicle and chauffeur reserved for your schedule — by the hour, half-day, full day or for the duration of your stay." },
-        { "id": "nightlife", "path": "/services/on-disposal-driver", "icon": "icon-diamond.svg", "title": "Beach Club & Nightlife Transfers", "body": "Comfortable and discreet transfers to restaurants, beach clubs and nightlife destinations, with return pickup when needed." },
-        { "id": "group", "path": "/services/per-route-transfers", "icon": "icon-van.svg", "title": "Group & Event Transfers", "body": "Luxury minibus transportation for families, wedding guests, corporate groups, VIP groups and private events." }
+        { "id": "airport", "path": "/services/airport-transfers", "icon": "icon-plane.svg", "title": "Mykonos Airport Transfers", "body": "Private arrivals and departures at Mykonos Airport (JMK) with professional chauffeur service, luggage assistance and clear communication." },
+        { "id": "port", "path": "/services/port-transfers", "icon": "icon-yacht.svg", "title": "Mykonos Port Transfers", "body": "Transfers from and to the Old Port, the New Port at Tourlos and yacht, ferry and cruise arrival points across the island." },
+        { "id": "hotel-villa", "path": "/services/hotel-villa-transfers", "icon": "icon-pin.svg", "title": "Hotel & Villa Transfers", "body": "Door-to-door private transportation to hotels, resorts, private villas and holiday residences across Mykonos." },
+        { "id": "on-disposal", "path": "/services/on-disposal-chauffeur", "icon": "icon-star.svg", "title": "On-Disposal Chauffeur Service", "body": "Your private chauffeur and premium vehicle, reserved exclusively for your programme — by the hour, half-day, full day or multiple days.", "featured": true },
+        { "id": "beach-nightlife", "path": "/services/beach-nightlife-transfers", "icon": "icon-diamond.svg", "title": "Beach Club, Restaurant & Nightlife Transfers", "body": "Private transfers between hotels, villas, beach clubs, restaurants and nightlife destinations, with scheduled return when needed." },
+        { "id": "group", "path": "/services/group-event-transfers", "icon": "icon-van.svg", "title": "Group, Wedding & Event Transfers", "body": "Coordinated private transportation for families, wedding guests, corporate groups and private events, with luxury minibus options." }
       ],
       "additionalHeading": "Additional Premium Services — Upon Request",
       "additional": [
@@ -258,7 +263,7 @@
           "body": "Whether you need a one-time transfer or the fleet and chauffeurs at your disposal for a full day, we are available whenever you need us. Plan your route ahead, or decide on the spot — our mission is a seamless, stress-free experience in Mykonos. More than a transport service, your reliable travel partner on the island."
         },
         {
-          "img": "/uploads/site/van-fleet-row.jpg",
+          "img": "/uploads/site/about-style.jpg",
           "eyebrow": "Luxury transport with style",
           "title": "Travel the island in the<br />way it <em>deserves</em>.",
           "body": "Explore the high-end places of Mykonos in a fleet of luxurious Mercedes-Benz vehicles, fitted with every amenity a top-tier service should offer. From world-renowned beach clubs and five-star restaurants to the island's hidden gems, our chauffeurs make every journey as exceptional as the destination."
@@ -353,15 +358,13 @@
       "sub": "The phone rings on a real desk in Mykonos Town, day and night. Most enquiries are answered inside the hour."
     },
     "items": [
-      { "k": "Concierge desk", "v": "+30 6973 564477", "href": "tel:+306973564477", "sub": "Greek & English · 24 hours · same number on WhatsApp, Viber & Telegram." },
+      { "k": "Concierge desk", "v": "+30 6973 564477", "href": "tel:+306973564477", "sub": "Greek & English · 24 hours · same number on WhatsApp and Viber." },
       { "k": "WhatsApp", "v": "+30 6973 564477", "href": "https://wa.me/306973564477", "external": true, "sub": "Tap to chat — fastest response, day or night." },
       { "k": "Viber", "v": "+30 6973 564477", "href": "viber://chat?number=%2B306973564477", "sub": "Open Viber to message us directly." },
-      { "k": "Telegram", "v": "+30 6973 564477", "href": "https://t.me/+306973564477", "external": true, "sub": "Discreet messaging for VIP guests." },
       { "k": "Email", "v": "info@mykonospreciousmoments.com", "href": "mailto:info@mykonospreciousmoments.com", "sub": "For tailor-made itineraries, multi-day bookings, or anything you'd rather put in writing." }
     ],
     "office": { "k": "Office", "v": "Matogianni 12, Chora<br />Mykonos 84600 · Greece", "sub": "By appointment only. The team is mostly on the road — please call ahead." },
-    "hours": { "k": "Hours", "v": "24 / 7 · all year", "sub": "Including Greek public holidays. Especially Greek public holidays." },
-    "follow": "Follow",
+    "hours": { "k": "Hours", "v": "24 / 7 · all year", "sub": "Available 24/7 throughout the year, including public holidays." },
     "form": {
       "eyebrow": "Send a note",
       "title": "We reply within the <em>hour</em>.",
@@ -369,16 +372,10 @@
       "fullName": "Full Name",
       "email": "Email Address",
       "phone": "Phone / WhatsApp",
-      "topic": "Topic",
-      "topicOptions": [
-        "General enquiry",
-        "New booking",
-        "Existing booking",
-        "Hotel / villa partnership",
-        "Press & media"
-      ],
+      "topic": "How can we help?",
+      "topicPlaceholder": "New booking, general enquiry, partnership or anything else…",
       "message": "Message",
-      "messagePlaceholder": "Dates, group size, anything we should know...",
+      "messagePlaceholder": "Tell us how we can help…",
       "privacy": "Your details are confidential and used only to reply to your message. We never share them.",
       "submit": "Send message",
       "sent": "Message sent · We'll be in touch"
@@ -417,8 +414,8 @@
     ],
     "airSeaTitle": "Premium partner arrangements — <em>upon request</em>.",
     "airSeaRows": [
-      { "id": "helicopter", "tag": "Air · Partner aviation", "title": "Airbus H145 Helicopter", "body": "Mykonos to Athens in 45 minutes. Island hops to Santorini, Paros, or Crete on short notice. FBO & customs handled by our aviation team.", "specs": [["Seats", "6"], ["Cruise", "240 km/h"], ["Range", "680 km"], ["Pad", "JMK · Villa"]], "img": "/uploads/site/helicopter.jpg" },
-      { "id": "yacht", "tag": "Sea · Partner charter", "title": "Sunseeker 76 Yacht", "body": "A 76-foot day-and-weekend cruiser with full crew. Day trips to Delos, the small Cyclades, or a slow sunset around the southern coast.", "specs": [["Guests", "10"], ["Cabins", "4"], ["Crew", "3"], ["Base", "Old Port"]], "img": "/uploads/site/sea-transfer.jpg" }
+      { "id": "helicopter", "tag": "Air · Partner aviation", "title": "Airbus H145 Helicopter", "body": "A premium helicopter option for fast and flexible travel between Mykonos and selected destinations. Ideal for guests seeking private air transportation, reduced travel time and seamless coordination with ground transfers. Availability and final arrangements are confirmed upon request through our aviation partners.", "specs": [["Seats", "6"], ["Cruise", "240 km/h"], ["Range", "680 km"], ["Pad", "JMK · Villa"]], "img": "/uploads/site/helicopter.jpg" },
+      { "id": "yacht", "tag": "Sea · Partner charter", "title": "Sunseeker 76 Yacht", "body": "A refined private yacht option for day trips, coastal cruising and tailor-made sea experiences around Mykonos and the Cyclades. Suitable for private groups seeking comfort, privacy and personalised planning. Availability, itinerary and final arrangements are confirmed upon request through our selected partners.", "specs": [["Guests", "10"], ["Cabins", "4"], ["Crew", "3"], ["Base", "Old Port"]], "img": "/uploads/site/sea-transfer.jpg" }
     ],
     "standards": {
       "eyebrow": "Across the fleet",
@@ -517,24 +514,26 @@
         "cta": "See the fleet"
       },
       "items": [
-        { "id": "transfers", "path": "/services/per-route-transfers", "icon": "icon-pin.svg", "title": "Airport & Port Transfers", "body": "Punctual point-to-point transfers in premium vehicles — JMK airport, the Old & New Port, hotels, villas and Airbnb." },
-        { "id": "chauffeur", "path": "/services/private-chauffeur", "icon": "icon-star.svg", "title": "Private Chauffeur", "body": "A dedicated driver for the length of your stay — your fixer, your local, available 24 hours a day." },
-        { "id": "disposal", "path": "/services/on-disposal-driver", "icon": "icon-clock.svg", "title": "On-Disposal Driver", "body": "Hire a chauffeur and luxury vehicle by the hour, half-day or 24 hours. Discreet, on-call, on your time." },
-        { "id": "sea", "path": "/services/sea-transfers", "icon": "icon-yacht.svg", "title": "Sea & Yacht Coordination", "body": "Private sea transfers, day trips to Delos and yacht arrangements — through trusted partners, on request." },
-        { "id": "air", "path": "/services/air-transfers", "icon": "icon-helicopter.svg", "title": "Private Air Coordination", "body": "Helicopter to Athens, private jet across the Mediterranean and island-hopping by air — through trusted partners, on request." },
-        { "id": "security", "path": "/services/vip-security", "icon": "icon-shield.svg", "title": "Security Assistance", "body": "Discreet personal protection and villa security for selected guests, villas and events, on request." },
-        { "id": "luggage", "path": "/services/luggage-storage", "icon": "icon-luggage.svg", "title": "Luggage Support", "body": "Same-day luggage pickup, storage and delivery across the island. Drop at JMK, collect from the villa." }
+        { "id": "airport", "path": "/services/airport-transfers", "icon": "icon-plane.svg", "title": "Mykonos Airport Transfers", "body": "Private arrivals and departures at Mykonos Airport (JMK), with professional chauffeurs, luggage assistance and flight-detail monitoring." },
+        { "id": "port", "path": "/services/port-transfers", "icon": "icon-yacht.svg", "title": "Mykonos Port Transfers", "body": "Transfers connecting the Old Port, the New Port at Tourlos and yacht or ferry meeting points with hotels, villas and the island." },
+        { "id": "hotel-villa", "path": "/services/hotel-villa-transfers", "icon": "icon-pin.svg", "title": "Hotel & Villa Transfers", "body": "Door-to-door transportation to hotels, resorts, private villas and holiday residences, with one-way and return journeys." },
+        { "id": "on-disposal", "path": "/services/on-disposal-chauffeur", "icon": "icon-star.svg", "title": "On-Disposal Chauffeur Service", "body": "A private chauffeur and premium vehicle reserved exclusively for your programme — hourly, half-day, full-day or multi-day.", "featured": true },
+        { "id": "beach-nightlife", "path": "/services/beach-nightlife-transfers", "icon": "icon-diamond.svg", "title": "Beach Club, Restaurant & Nightlife Transfers", "body": "Private transportation between hotels, villas, beach clubs, restaurants, bars and nightlife destinations, with return service." },
+        { "id": "group", "path": "/services/group-event-transfers", "icon": "icon-van.svg", "title": "Group, Wedding & Event Transfers", "body": "Coordinated transportation for weddings, families, corporate groups and private events, with luxury minibus and multi-vehicle options." },
+        { "id": "sea", "path": "/services/sea-transfers", "icon": "icon-yacht.svg", "title": "Sea & Yacht Coordination", "body": "Private sea transfers and yacht arrangements through trusted partners, with ground transportation coordinated on both ends, on request." },
+        { "id": "air", "path": "/services/air-transfers", "icon": "icon-helicopter.svg", "title": "Private Air Coordination", "body": "Helicopter and private air arrangements through trusted partners, with ground transfers to airports and helipads, on request." },
+        { "id": "security", "path": "/services/vip-security", "icon": "icon-shield.svg", "title": "Security Assistance", "body": "Discreet security support for selected guests, residences and events through authorised partners, on request." },
+        { "id": "luggage", "path": "/services/luggage-storage", "icon": "icon-luggage.svg", "title": "Luggage Support", "body": "Luggage pickup, transportation, storage coordination and delivery, combined with private transfers, on request." }
       ]
     },
     "readMore": "Read more",
     "details": [
-      { "id": "chauffeur", "number": "Service 01", "title": "VIP Private Chauffeur", "intro": "A single chauffeur, the same car, the entire holiday. They will know your morning swim, your dinner reservation at <em>Hippie Fish</em>, and that you take the long way home.", "bullets": ["Dedicated driver for the length of your stay", "Mercedes V-Class or S-Class as standard, others on request", "Unlimited radius across Mykonos · 24-hour availability", "NDA-signed · multilingual · island-born", "From €1,400 / day · multi-day rates on request"], "ctaLabel": "Request a chauffeur", "ctaPath": "/book?svc=chauffeur", "readMorePath": "/services/private-chauffeur", "img": "/uploads/site/chauffeur-door.jpg", "alt": true },
-      { "id": "transfers", "number": "Service 02", "title": "Per-Route Transfers", "intro": "Quick, punctual, fixed-fare transfers between any two points on the island. Tracked flights, ferries, and yacht ETAs. A chauffeur waiting before you arrive.", "bullets": ["JMK Airport ↔ any villa, hotel, or port", "Old Port ↔ New Port (Tourlos) ↔ Rafina / Piraeus ferries", "Beach club & restaurant round-trips with wait time", "Meet & greet, name board, luggage handled", "From €120 per route, all-in"], "ctaLabel": "Book a transfer", "ctaPath": "/book?svc=transfers", "readMorePath": "/services/per-route-transfers", "img": "/uploads/site/van-sea.jpg", "imgFirst": true },
-      { "id": "disposal", "number": "Service 03", "title": "On-Disposal Driver", "intro": "A chauffeur and luxury vehicle reserved for a defined window — three hours, twelve hours, or the whole day. They wait, they re-park, they re-route on a whim.", "bullets": ["Hourly (3-hour minimum) · half-day (6h) · full-day (12h)", "Unlimited mileage within Mykonos", "Wait time included — restaurant, beach, shopping", "From €110 / hour · daily packages from €950"], "ctaLabel": "Reserve a driver", "ctaPath": "/book?svc=disposal", "readMorePath": "/services/on-disposal-driver", "img": "/uploads/site/van-interior.jpg", "alt": true },
-      { "id": "sea", "number": "Service 04", "title": "Sea Transfers & Yacht Tours", "intro": "From a quick 15-minute crossing to Delos, to a slow afternoon at the small Cyclades with chef and sommelier on board. Charter from the Old Port or anywhere your yacht waits.", "bullets": ["Day charters: Delos · Rinia · Tinos · the small Cyclades", "Sunset cruises with private chef & sommelier on request", "Yacht meets at Tourlos, the Old Port, or anchor", "Captain & deckhand · fuel · refreshments included", "From €1,800 / half-day · custom multi-day on request"], "ctaLabel": "Plan a charter", "ctaPath": "/book?svc=sea", "readMorePath": "/services/sea-transfers", "img": "/uploads/site/sea-transfer.jpg", "imgFirst": true },
-      { "id": "air", "number": "Service 05", "title": "Private Air Transfers", "intro": "Helicopter to Athens, private jet anywhere in the Mediterranean, or a same-morning island hop to Santorini for lunch. Our aviation partner handles the rest.", "bullets": ["Helicopter: Mykonos ↔ Athens (45 min) · island hops", "Private jet from JMK to any Med. airport", "Helipad pickup at major villas where available", "FBO & customs handled · car waiting on arrival", "Quoted by request"], "ctaLabel": "Request a quote", "ctaPath": "/book?svc=air", "readMorePath": "/services/air-transfers", "img": "/uploads/site/helicopter.jpg", "alt": true },
-      { "id": "security", "number": "Service 06", "title": "VIP Security", "intro": "Personal protection officers, residential villa security, and secure transport. Quiet, professional, ex-military. Cleared for celebrity and corporate clientele.", "bullets": ["Close protection officers (multilingual, ex-military)", "24-hour villa & perimeter security", "Secure transport in armoured vehicles on request", "Background-checked · NDA-signed · discreet uniform or plain", "Quoted by request"], "ctaLabel": "Speak in confidence", "ctaPath": "/contact", "readMorePath": "/services/vip-security", "img": "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=1400&q=80", "imgFirst": true },
-      { "id": "luggage", "number": "Service 07", "title": "Luggage Storage & Transport", "intro": "Same-day luggage logistics across Mykonos. Drop bags at JMK after villa check-out, collect from the yacht at New Port, or store for the day while you cross to Delos.", "bullets": ["Climate-controlled storage in Mykonos Town", "Pickup & drop-off island-wide", "Hand-off direct to airline check-in at JMK", "From €25 per bag · same-day service"], "ctaLabel": "Arrange storage", "ctaPath": "/book?svc=luggage", "readMorePath": "/services/luggage-storage", "img": "/uploads/fleet/vito-boot.jpg", "alt": true }
+      { "id": "airport", "number": "Service 01", "title": "Mykonos Airport Transfers", "intro": "Arriving at Mykonos International Airport should be the easiest part of your journey. Our private airport transfer service connects JMK with hotels, villas, private residences and destinations across the island — your chauffeur following the confirmed flight details to the agreed pickup point.", "bullets": ["Private pickup from or to Mykonos International Airport", "Hotel, villa and private accommodation transfers", "Premium van and minibus options", "Flight details monitored when provided", "24/7 communication and transfer support"], "ctaLabel": "Request an Airport Transfer", "ctaPath": "/book?svc=airport", "readMorePath": "/services/airport-transfers", "img": "/uploads/site/fleet-convoy.jpg" },
+      { "id": "port", "number": "Service 02", "title": "Mykonos Port Transfers", "intro": "Arriving at or departing from the ports of Mykonos should feel simple and well organised. Our private port transfer service connects the Old Port, the New Port at Tourlos and selected yacht or ferry meeting points with hotels, villas, Mykonos Town and destinations across the island.", "bullets": ["Private pickup from the Old Port or New Port", "Ferry, cruise and yacht arrival transfers", "Port-to-hotel and port-to-villa transportation", "Airport-to-port and port-to-airport connections", "Premium van and minibus options"], "ctaLabel": "Request a Port Transfer", "ctaPath": "/book?svc=port", "readMorePath": "/services/port-transfers", "img": "/uploads/site/van-sea-yacht.jpg", "imgFirst": true, "alt": true },
+      { "id": "hotel-villa", "number": "Service 03", "title": "Hotel & Villa Transfers", "intro": "From hotels and resorts to private villas and holiday residences, we provide comfortable door-to-door transportation across Mykonos. Our chauffeurs collect guests from the agreed entrance or meeting point and transfer them directly to their destination, for a single journey, a return transfer or multiple routes during the stay.", "bullets": ["Hotel and resort pickups", "Private villa transportation", "Airbnb and holiday residence transfers", "One-way and return journeys", "Airport and port connections"], "ctaLabel": "Request a Hotel or Villa Transfer", "ctaPath": "/book?svc=hotel-villa", "readMorePath": "/services/hotel-villa-transfers", "img": "/uploads/site/chauffeur-door.jpg" },
+      { "id": "on-disposal", "number": "Signature Service", "title": "On-Disposal Chauffeur Service", "intro": "Experience Mykonos with a professional chauffeur and premium private vehicle reserved exclusively for you. Throughout the agreed service period, your chauffeur follows your schedule between villas, hotels, beaches, restaurants, events, shopping areas and nightlife destinations — for several hours, a half day, a full day or multiple days. More than a simple transfer, it is a personalised VIP transportation service at your disposal.", "bullets": ["Dedicated private chauffeur and vehicle", "Hourly, half-day, full-day or multi-day arrangements", "Flexible schedule with multiple destinations", "Professional English-speaking chauffeur", "Suitable for couples, families, groups and VIP guests"], "ctaLabel": "Request an On-Disposal Chauffeur", "ctaPath": "/book?svc=on-disposal", "readMorePath": "/services/on-disposal-chauffeur", "img": "/uploads/site/van-interior.jpg", "imgFirst": true, "alt": true },
+      { "id": "beach-nightlife", "number": "Service 04", "title": "Beach Club, Restaurant & Nightlife Transfers", "intro": "From seaside restaurants and beach clubs to dinner in Mykonos Town and late-night entertainment, reliable transportation is an essential part of the Mykonos experience. We provide private transfers between hotels, villas, restaurants, beach clubs, bars and nightlife destinations across the island — one-way, with a scheduled return, or between several venues.", "bullets": ["Private beach club transfers", "Restaurant pickup and drop-off", "Evening and late-night transportation", "One-way and scheduled return journeys", "Transfers between multiple venues"], "ctaLabel": "Request Your Transfer", "ctaPath": "/book?svc=beach-nightlife", "readMorePath": "/services/beach-nightlife-transfers", "img": "/uploads/site/psarrou-beach.jpg" },
+      { "id": "group", "number": "Service 05", "title": "Group, Wedding & Event Transfers", "intro": "Successful group transportation requires careful planning, clear communication and suitable vehicles. Our team coordinates private transfers for families, wedding guests, corporate groups, celebrations and private events across Mykonos — from airport and port arrivals to hotel and villa pickups, transfers to the venue and scheduled return journeys.", "bullets": ["Wedding guest transportation", "Private party and event transfers", "Corporate and professional groups", "Airport and port arrival coordination", "Multiple vehicle coordination on request"], "ctaLabel": "Request an Event Transportation Plan", "ctaPath": "/book?svc=group", "readMorePath": "/services/group-event-transfers", "img": "/uploads/site/van-fleet-row.jpg", "imgFirst": true, "alt": true }
     ],
     "cta": {
       "eyebrow": "Combine services",
@@ -575,110 +574,298 @@
         "whatsappMessage": "Hello, I would like to request a private airport transfer in Mykonos."
       }
     },
-    "air": {
-      "header": { "eyebrow": "Private air transfers", "title": "Above the <em>Aegean</em>.<br />On your schedule.", "sub": "Helicopter transfers to Athens, private jet charters across the Mediterranean, and same-day island-hopping by air — coordinated through MPM's trusted aviation partners, on request." },
-      "intro": { "eyebrow": "Private aviation in Mykonos", "title": "Private Air Transfers<br />& <em>Island</em> Air Tours.", "lead": "Some journeys are best taken above the queue. Helicopter to Athens in 45 minutes, private jet to anywhere in the Mediterranean, or a same-morning island hop to Santorini for lunch — MPM's aviation team handles the aircraft, the paperwork, and the car waiting on the other end." },
-      "row1": { "eyebrowSm": "Helicopter & jet services", "title": "The helicopter at JMK, the jet on the apron, the car at the door.", "body": "Our aviation partner operates a fleet of Airbus H145 and AW109 helicopters and access to a network of light, mid-size and heavy jets at Mykonos JMK. Manifests are filed in advance, customs and immigration are pre-cleared where applicable, and a chauffeur is waiting at the apron the moment your wheels touch the ground.", "img": "/uploads/site/chauffeur-door.jpg", "alt": "Chauffeur waiting with the car at the apron", "cta": "Request a quote", "ctaPath": "/book?svc=air" },
-      "bullets": ["Helicopter: Mykonos ↔ Athens (45 min) · island hops to Santorini, Paros, Crete", "Private jet from JMK to any Mediterranean airport · global on request", "Helipad pickup at major villas, where available", "FBO, customs and immigration handled · car waiting on arrival", "Aerial island tours: 30-minute scenic flights over the Cyclades", "Quoted by request · aircraft selected to passenger count and luggage"],
-      "what": { "eyebrow": "What we fly", "title": "Four ways to leave<br />the island, by <em>air</em>.", "lead": "From a 45-minute hop to Athens to a same-day return from a meeting in Rome — every mission is built around your schedule, not an airline timetable." },
-      "tiles": [
-        { "icon": "icon-helicopter.svg", "title": "Helicopter to Athens", "body": "Forty-five minutes door to door, JMK to the Athens Riviera or the international airport. A chauffeur on each end, baggage handled, no terminal queues." },
-        { "icon": "icon-star.svg", "title": "Private jet charter", "body": "From JMK to Nice, Geneva, London, Rome or further. Light jets for couples, mid-size for families, heavy jets for groups — selected per passenger count, luggage and range." },
-        { "icon": "icon-yacht.svg", "title": "Island hopping by air", "body": "Same-morning hops to Santorini for lunch, Crete for an afternoon, Athens for a meeting and back by dinner. The Cyclades, from above and on schedule." },
-        { "icon": "icon-pin.svg", "title": "Aerial island tours", "body": "Thirty-minute scenic helicopter flights over Mykonos, Delos, Rinia and the south coast. A photographer's view of the island, with champagne on landing." }
+    "port": {
+      "header": {
+        "eyebrow": "Mykonos Ports · Old & New Port",
+        "title": "Private Mykonos<br />Port <em>Transfers</em>.",
+        "sub": "Comfortable transportation from the Old Port, New Port and Tourlos."
+      },
+      "body": [
+        "Arriving at or departing from the ports of Mykonos should feel simple and well organised.",
+        "Our private port transfer service connects the Old Port, New Port at Tourlos and selected yacht or ferry meeting points with hotels, villas, Mykonos Town and destinations across the island.",
+        "Pickup details are arranged according to the confirmed ferry, cruise or vessel information and the agreed meeting point.",
+        "Whether you are travelling individually, as a family or as a larger group, we select the most suitable vehicle according to the number of passengers and luggage."
       ],
-      "row2": { "eyebrowSm": "Door to door", "title": "FBO. Customs. Car. Drink, on landing.", "p1": "An air transfer with MPM is not just a flight. It is a chauffeur at the villa, a porter for the bags, an FBO lounge if you need it, customs and immigration handled where applicable, and a chilled drink in the car the moment you step off.", "p2": "For inbound guests, the inverse — your private jet lands at JMK, your chauffeur is waiting at the apron, and your bags are at the villa before you finish the welcome aperitif.", "img": "/uploads/site/chora-mykonos.jpg", "alt": "Aerial view of Mykonos" },
-      "cta": { "eyebrow": "Request a quote", "title": "Tell us your <em>route</em> and dates.", "primary": "Request a quote", "primaryPath": "/book?svc=air" }
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Private pickup from the Old Port or New Port",
+        "Ferry, cruise and yacht arrival transfers",
+        "Port-to-hotel and port-to-villa transportation",
+        "Airport-to-port and port-to-airport connections",
+        "Premium van and minibus options",
+        "Suitable for individuals, families and groups",
+        "Space for passenger luggage",
+        "Clear meeting-point communication"
+      ],
+      "cta": {
+        "eyebrow": "Ready when you are",
+        "title": "Request your <em>port transfer</em>.",
+        "primary": "Request a Port Transfer",
+        "primaryPath": "/book?svc=port",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to request a private port transfer in Mykonos."
+      }
     },
-    "luggage": {
-      "header": { "eyebrow": "Luggage storage & transfer", "title": "Same-day bags.<br />Island-<em>wide</em>.", "sub": "Climate-controlled luggage storage in Mykonos Town, with collection and delivery anywhere — your villa, the port, the yacht, or direct hand-off to airline check-in at JMK. Available on request, subject to availability." },
-      "intro": { "eyebrow": "Luggage logistics in Mykonos", "title": "Luggage Storage<br />& <em>Transfer</em> Services.", "lead": "Villa check-out is at 11. Your flight is at 9. The day in between belongs to you — not to two suitcases following you around. MPM's luggage logistics service stores, transports and delivers your bags across Mykonos so you can spend the gap exactly where you want to." },
-      "row1": { "eyebrowSm": "Drop, store, deliver", "title": "Climate-controlled storage in the heart of Mykonos Town.", "body": "Our luggage facility sits a short walk from the Old Port — climate-controlled, monitored, and accessible to our team only. Each bag is photographed and tagged on arrival, stored on individual racks, and handed off through a chain-of-custody log that runs all the way to the airline check-in counter at JMK.", "img": "https://images.unsplash.com/photo-1688619100853-cc0e3ae443ab?w=1400&q=80", "alt": "Luggage storage in Mykonos Town", "cta": "Arrange storage", "ctaPath": "/book?svc=luggage" },
-      "bullets": ["Climate-controlled storage in Mykonos Town", "Pickup & drop-off island-wide · JMK airport, ports, hotels, villas, yachts", "Hand-off direct to airline check-in at JMK", "Bags tagged, weighed, photographed and tracked", "Same-day service · multi-day storage at flat daily rate", "From €25 per bag · group rates on request"],
-      "use": { "eyebrow": "When you need it", "title": "Four ways guests<br /><em>actually</em> use it.", "lead": "The luggage service exists for the awkward gap between check-out and check-in, between the villa and the yacht, between the last beach and the late flight home." },
-      "tiles": [
-        { "icon": "icon-luggage.svg", "title": "After villa check-out", "body": "Check out of your villa at 11am, fly out at 9pm. We collect your bags, store them in climate-controlled lockers in town, and meet you at JMK before your gate opens." },
-        { "icon": "icon-yacht.svg", "title": "Before you board", "body": "Bags waiting at the yacht when you arrive, not at the hotel. Drop with our concierge in the morning, find them in the tender by lunchtime." },
-        { "icon": "icon-pin.svg", "title": "Day trip storage", "body": "Crossing to Delos, lunch at Nammos, sunset at Scorpios — and a flight to catch at 11pm. We hold your bags for the day, and bring them to the airport on the dot." },
-        { "icon": "icon-shield.svg", "title": "Tracked & insured", "body": "Every bag is photographed at pickup, weighed, tagged with a unique code, and tracked from collection to hand-off. Fully insured, GDPR compliant." }
+    "hotelVilla": {
+      "header": {
+        "eyebrow": "Hotels · Villas · Residences",
+        "title": "Private Hotel & Villa<br /><em>Transfers</em> in Mykonos.",
+        "sub": "Door-to-door transportation across the island."
+      },
+      "body": [
+        "From hotels and resorts to private villas and holiday residences, we provide comfortable transportation across Mykonos.",
+        "Our chauffeurs collect guests from the agreed entrance, access point or nearby meeting location and transfer them directly to their destination.",
+        "The service can be arranged for a single journey, a return transfer or multiple routes during the stay.",
+        "Because some private properties are located in areas with narrow roads or limited vehicle access, pickup instructions are confirmed carefully in advance."
       ],
-      "row2": { "eyebrowSm": "Direct to check-in", "title": "Hand-off at JMK, before your gate opens.", "p1": "For departures, we deliver your bags directly to the airline check-in counter at JMK Mykonos airport, timed to the opening of your flight. Our team handles the queue, the documentation, and the boarding-pass exchange — so you arrive at the airport with hand luggage only, no need to carry, push or drag a thing.", "p2": "For arrivals, the inverse — bags are collected from JMK and waiting at your villa, hotel or yacht before you finish your first drink on the island.", "img": "https://images.unsplash.com/photo-1688619102725-f2fd886313e6?w=1400&q=80", "alt": "Direct hand-off at JMK airport" },
-      "cta": { "eyebrow": "Arrange storage", "title": "Tell us the <em>drop-off time</em>.", "primary": "Arrange storage", "primaryPath": "/book?svc=luggage" }
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Hotel and resort pickups",
+        "Private villa transportation",
+        "Airbnb and holiday residence transfers",
+        "One-way and return journeys",
+        "Airport and port connections",
+        "Beach club, restaurant and nightlife transfers",
+        "Suitable for families and groups",
+        "Multiple daily journeys available on request"
+      ],
+      "cta": {
+        "eyebrow": "Ready when you are",
+        "title": "Arrange your <em>hotel or villa</em> transfer.",
+        "primary": "Request a Hotel or Villa Transfer",
+        "primaryPath": "/book?svc=hotel-villa",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to request a private hotel or villa transfer in Mykonos."
+      }
     },
-    "disposal": {
-      "header": { "eyebrow": "On disposal driver", "title": "Your driver, your car,<br /><em>your day</em>.", "sub": "A professional chauffeur and a high-end Mercedes reserved for the entire day, the night, or the whole holiday — at your disposal, on your schedule." },
-      "intro": { "eyebrow": "On-demand chauffeur", "title": "On-Demand <em>Driver Service</em><br />in Mykonos.", "lead": "Experience unparalleled convenience and luxury with MPM Mykonos Precious Moments' on disposal driver service. This exclusive offering allows you to hire a professional driver and one of our high-end vehicles for the entire day and night, ensuring you have personalized transportation at your disposal. No need to worry about catching multiple taxis throughout the day; our on-demand service guarantees complete freedom to explore Mykonos according to your schedule." },
-      "row1": { "eyebrowSm": "Absolute confidentiality", "title": "On Disposal Transfers with the discretion you expect.", "body": "At MPM Mykonos Precious Moments, we understand the importance of discretion and professionalism. Our on disposal driver service ensures that your privacy is maintained at all times. Our drivers are trained to provide impeccable service without asking questions, while also being able to suggest must-visit locations on the island. Your Mykonos adventure will be tailored to your preferences, and your confidentiality will always be respected.", "img": "/uploads/site/chauffeur-door.jpg", "alt": "On disposal chauffeur in Mykonos", "cta": "Reserve a driver", "ctaPath": "/book?svc=disposal" },
-      "bullets": ["Hourly (3-hour minimum) · half-day (6h) · full-day (12h) · 24-hour packages", "Unlimited mileage within Mykonos · driver waits, re-parks, re-routes on a whim", "Hotel transfers, beach clubs, shopping, late-night returns — all on one tab", "NDA-signed chauffeurs · multilingual · island-born", "Mercedes-Benz V-Class or S-Class as standard · others on request", "From €110 / hour · daily packages from €950"],
-      "row2": { "eyebrowSm": "For the day, or your whole stay", "title": "Hire a driver for an afternoon, an evening, or a full holiday.", "p1": "Our on disposal driver service is perfect for any occasion or need, be it hotel transfers, beach visits, shopping trips, or a night out at a club or bar. Your dedicated driver will be at your service, ready to take you wherever you desire, ensuring you can make the most of your time in Mykonos. This hassle-free service allows you to enjoy the island without any constraints, providing a true luxury experience.", "p2": "Plan a full itinerary in advance, or decide everything on the morning of — the chauffeur adapts to you, never the other way around.", "img": "/uploads/site/van-sea.jpg", "alt": "Hire a driver in Mykonos for the day" },
-      "what": { "eyebrow": "What you get", "title": "True luxury,<br />on <em>your</em> schedule.", "lead": "Why settle for less when you can indulge in the ultimate luxury experience with MPM's on disposal driver service? Our professional drivers and high-end vehicles cater to your every whim — convenience, confidentiality and luxury, in a single booking." },
-      "tiles": [
-        { "icon": "icon-clock.svg", "title": "By the hour or by the week", "body": "Three hours for a long lunch, twelve for a wedding day, seven days for a whole holiday. Quoted upfront, no surprise add-ons." },
-        { "icon": "icon-shield.svg", "title": "Confidential by contract", "body": "Every chauffeur signs an NDA. No photographs, no social media, no chatter at the bar. We have hosted celebrity and corporate clientele since 2018." },
-        { "icon": "icon-pin.svg", "title": "Local knowledge on tap", "body": "Need a quiet cove, a late dinner that is not booked out, or a florist that delivers at 2am? Your driver knows the door, and the doorman." },
-        { "icon": "icon-diamond.svg", "title": "One car, one driver, all day", "body": "The same vehicle and the same person from morning swim to last drink. No call-outs, no waiting, no second taxi." }
+    "onDisposal": {
+      "header": {
+        "eyebrow": "Signature Service · On Disposal",
+        "title": "On-Disposal <em>Chauffeur</em><br />Service in Mykonos.",
+        "sub": "Your private chauffeur and vehicle, exclusively available for your programme."
+      },
+      "body": [
+        "Experience Mykonos with a professional chauffeur and premium private vehicle reserved exclusively for you.",
+        "Throughout the agreed service period, your chauffeur remains available to follow your schedule between villas, hotels, beaches, restaurants, events, shopping areas and nightlife destinations.",
+        "The service can be arranged for several hours, a half day, a full day or multiple days, providing continuity, privacy and complete flexibility throughout your stay.",
+        "More than a simple transfer, it is a personalised VIP transportation service with a dedicated chauffeur and vehicle at your disposal."
       ],
-      "cta": { "eyebrow": "Reserve on disposal", "title": "Tell us when, and for <em>how long</em>.", "primary": "Reserve a driver", "primaryPath": "/book?svc=disposal" }
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Dedicated private chauffeur and vehicle",
+        "Hourly, half-day, full-day or multi-day arrangements",
+        "Flexible schedule with multiple destinations",
+        "Direct transportation between villas, beaches, restaurants and events",
+        "Professional English-speaking chauffeur",
+        "Premium van and luxury minibus options",
+        "Suitable for couples, families, groups and VIP guests",
+        "Direct communication with your transportation team"
+      ],
+      "note": {
+        "heading": "Important Note",
+        "body": "The vehicle and chauffeur remain available during the confirmed disposal period. The starting point, finishing point and agreed service hours are arranged in advance. Additional hours or major schedule changes remain subject to availability."
+      },
+      "cta": {
+        "eyebrow": "Ready when you are",
+        "title": "Your private chauffeur. Your schedule. <em>Your Mykonos</em>.",
+        "primary": "Request an On-Disposal Chauffeur",
+        "primaryPath": "/book?svc=on-disposal",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to request an on-disposal chauffeur service in Mykonos."
+      }
     },
-    "perRoute": {
-      "header": { "eyebrow": "Per-route transfers", "title": "Fixed fares.<br />Tracked <em>arrivals</em>.", "sub": "Punctual, point-to-point transfers in high-end Mercedes-Benz vehicles — between JMK, the ports, your villa, and every beach club in between." },
-      "intro": { "eyebrow": "Luxury per-route transfers", "title": "Per Route <em>Transfers</em><br />in Mykonos.", "lead": "For guests who know exactly where they are going and want it done flawlessly, MPM's per-route transfer service offers fixed-fare, point-to-point chauffeured journeys across the island. Every route is priced upfront, every fare is all-inclusive, and every chauffeur is briefed before you ever land." },
-      "row1": { "eyebrowSm": "Luxury vehicles, local expertise", "title": "Mercedes-Benz comfort, island-born chauffeurs.", "body": "Our fleet of Mercedes-Benz V-Class, S-Class and Sprinter vehicles is reserved exclusively for transfer guests — air-conditioned, Wi-Fi enabled, stocked with bottled water and detailed daily. Every chauffeur is island-born, multilingual, and licensed by the Greek E.O.T. as a transfer operator. They know the back roads to your villa, the rush at Ornos, and the quietest route across town when Chora is closed for the procession.", "img": "/uploads/site/chauffeur-door.jpg", "alt": "Per-route luxury transfer in Mykonos", "cta": "Book a transfer", "ctaPath": "/book?svc=transfers" },
-      "bullets": ["JMK Airport ↔ any villa, hotel or port across Mykonos", "Old Port ↔ New Port (Tourlos) ↔ Rafina · Piraeus ferries", "Beach club & restaurant round-trips with included wait time", "Meet & greet at arrivals · name board · luggage handled door to door", "Tracked flights, ferries and yacht ETAs — chauffeur waiting before you arrive", "From €120 per route, all-in · no hidden fees"],
-      "routes": { "eyebrow": "Routes we run", "title": "Every point on the<br />island, <em>covered</em>.", "lead": "Whether it's the airport at sunrise, the ferry at midnight, or the dinner reservation that runs long — we handle the route, the timing, and everything in between." },
-      "tiles": [
-        { "tag": "Airport · JMK", "title": "Mykonos Airport transfers", "body": "From the moment your flight lands, your chauffeur is already waiting at arrivals with your name on a discreet board. Bags handled, drinks chilled, and the most scenic route home, if you wish it." },
-        { "tag": "Ports · Tourlos & Chora", "title": "Port & ferry transfers", "body": "From the New Port at Tourlos to a villa in Agios Lazaros, or the Old Port at Chora to your yacht's tender — we shadow the ferry schedules and the marina manifest, so you never wait on a dock." },
-        { "tag": "Beach clubs & dinner", "title": "Round-trip transfers", "body": "Drop at Nammos for lunch, collect at sundown. Drop at Scorpios at 9, collect at 3am. Wait time, parking, and the long way home are all included in one fixed fare." },
-        { "tag": "Villa to villa", "title": "Inter-villa & private events", "body": "Wedding parties, multi-villa dinners, and the after-party. Multiple vehicles in convoy, coordinated by a single concierge on the phone." }
+    "beachNightlife": {
+      "header": {
+        "eyebrow": "Beach · Restaurant · Nightlife",
+        "title": "Beach Club, Restaurant<br />& <em>Nightlife</em> Transfers.",
+        "sub": "Private transportation for every part of your Mykonos day and night."
+      },
+      "body": [
+        "From seaside restaurants and beach clubs to dinner in Mykonos Town and late-night entertainment, reliable transportation is an essential part of the Mykonos experience.",
+        "We provide private transfers between hotels, villas, restaurants, beach clubs, bars and nightlife destinations across the island.",
+        "Guests can arrange a one-way journey, a scheduled return transfer or transportation between several venues.",
+        "For groups, a suitable private van or minibus allows everyone to travel together without depending on last-minute vehicle availability.",
+        "Because traffic and access conditions can change during the summer season, meeting points and collection times are confirmed according to the venue and the conditions of the day."
       ],
-      "row2": { "eyebrowSm": "No surprises, ever", "title": "All-inclusive pricing. Tracked flights. Real concierges.", "p1": "Every per-route fare includes meet & greet, luggage handling, wait time on delayed flights and ferries, bottled water, Wi-Fi, and child seats on request. There is no surge pricing, no after-hours premium, and no charge for waiting on a delayed yacht tender. If your itinerary changes en route — we adjust, you do not pay twice.", "p2": "A single concierge handles your booking from the first email to the last drop-off. Reachable 24 hours a day, in English, Greek, French and Italian.", "img": "/uploads/site/van-interior.jpg", "alt": "Mercedes-Benz V-Class transfer cabin" },
-      "cta": { "eyebrow": "Book a transfer", "title": "Quote a route in <em>under a minute</em>.", "primary": "Book a transfer", "primaryPath": "/book?svc=transfers" }
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Private beach club transfers",
+        "Restaurant pickup and drop-off",
+        "Evening and late-night transportation",
+        "Hotel and villa pickups",
+        "One-way and scheduled return journeys",
+        "Transfers between multiple venues",
+        "Premium van and luxury minibus options",
+        "Pickup-point coordination where vehicle access is restricted"
+      ],
+      "cta": {
+        "eyebrow": "Ready when you are",
+        "title": "Enjoy Mykonos. We will handle <em>every ride</em>.",
+        "primary": "Request Your Transfer",
+        "primaryPath": "/book?svc=beach-nightlife",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to request a beach club, restaurant or nightlife transfer in Mykonos."
+      }
     },
-    "chauffeur": {
-      "header": { "eyebrow": "VIP private chauffeur", "title": "One chauffeur.<br />The whole <em>stay</em>.", "sub": "A dedicated driver and a dedicated Mercedes for the length of your holiday. Your fixer, your local, your discreet ride across the island — 24 hours a day." },
-      "intro": { "eyebrow": "Private chauffeur in Mykonos", "title": "Hire a Private <em>Chauffeur</em><br />in Mykonos.", "lead": "A private chauffeur from MPM Mykonos Precious Moments is not a driver you call from a stand. They are the same person at the wheel from the moment your flight lands to the moment your holiday ends — briefed on your itinerary, fluent in your language, and on call at any hour. They will know your morning swim, your dinner reservation at <em>Hippie Fish</em>, and that you take the long way home." },
-      "row1": { "eyebrowSm": "VIP driver, 24 hours a day", "title": "A fixer behind the wheel, available around the clock.", "body": "Our VIP chauffeurs are island-born, professionally trained and certified by the Greek E.O.T. as licensed transfer operators. They are multilingual, NDA-signed, and used to handling diplomatic, celebrity and yacht clientele. Beyond driving, they are your fixer on the island — booking the unbookable table, calling ahead to the beach club, picking up the prescription before you finish lunch.", "img": "/uploads/site/van-sea-yacht.jpg", "alt": "VIP private chauffeur in Mykonos", "cta": "Request a chauffeur", "ctaPath": "/book?svc=chauffeur" },
-      "bullets": ["Dedicated driver and dedicated vehicle for the length of your stay", "Mercedes-Benz V-Class or S-Class as standard · Maybach, EQS or G-Class on request", "Unlimited radius across Mykonos · 24-hour availability", "NDA-signed · multilingual (English, Greek, French, Italian)", "Island-born — knows the chef at Nammos, the harbour master at Tourlos", "From €1,400 / day · multi-day rates on request"],
-      "why": { "eyebrow": "Why a private chauffeur", "title": "Four reasons our<br />guests <em>return</em>.", "lead": "A private chauffeur is more than transportation — it is a single, trusted point of contact who can resolve almost anything that comes up across a week on the island." },
-      "tiles": [
-        { "icon": "icon-star.svg", "title": "One face, all week", "body": "The same chauffeur from the moment you land to the last drop-off at JMK. They learn your rhythms, your reservations, and which beach you prefer in the morning." },
-        { "icon": "icon-clock.svg", "title": "24 hours, no exceptions", "body": "Late dinners, early flights, midnight runs to the pharmacy. The phone is answered at every hour — and the car arrives within fifteen minutes." },
-        { "icon": "icon-shield.svg", "title": "NDA-signed, every driver", "body": "Confidentiality is in the contract, not the brochure. No social media, no photographs, no chatter at the bar." },
-        { "icon": "icon-pin.svg", "title": "Island knowledge, not Google", "body": "Our drivers grew up here. They know the chef at Hippie Fish, the door at Scorpios, and the right hour to cross Chora." }
+    "groupEvent": {
+      "header": {
+        "eyebrow": "Groups · Weddings · Events",
+        "title": "Group, Wedding &<br /><em>Event</em> Transportation.",
+        "sub": "Coordinated private transportation for guests and special occasions."
+      },
+      "body": [
+        "Successful group transportation requires careful planning, clear communication and suitable vehicles.",
+        "Our team coordinates private transfers for families, wedding guests, corporate groups, celebrations and private events across Mykonos.",
+        "Transportation can include airport and port arrivals, hotel and villa pickups, transfers to the venue and scheduled return journeys.",
+        "Depending on the number of guests and the programme, one or more vehicles can be arranged to support different pickup points and schedules."
       ],
-      "row2": { "eyebrowSm": "The car, and the man at the wheel", "title": "Brand-new Mercedes-Benz. Driver fitted to the guest.", "p1": "Each chauffeur drives a Mercedes-Benz V-Class or S-Class as standard, with EQS, Maybach S 680 or G-Class available on request. The fleet is replaced every 24 months, detailed daily, and stocked with bottled water, 4G Wi-Fi and a low-volume playlist.", "p2": "Tell our concierge how you prefer to travel — quiet or conversational, with the windows down or the air on, taking the scenic route or the fastest one home — and we pair you with the chauffeur who fits.", "img": "/uploads/site/van-interior.jpg", "alt": "Mercedes-Benz V-Class private chauffeur" },
-      "cta": { "eyebrow": "Request a chauffeur", "title": "Tell us your <em>arrival date</em>.", "primary": "Request a chauffeur", "primaryPath": "/book?svc=chauffeur" }
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Wedding guest transportation",
+        "Private party and event transfers",
+        "Corporate and professional groups",
+        "Airport and port arrival coordination",
+        "Hotel and villa collection points",
+        "Luxury minibus service",
+        "Multiple vehicle coordination on request",
+        "Scheduled return transfers"
+      ],
+      "cta": {
+        "eyebrow": "Ready when you are",
+        "title": "Plan every arrival and <em>every return</em>.",
+        "primary": "Request an Event Transportation Plan",
+        "primaryPath": "/book?svc=group",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to request group, wedding or event transportation in Mykonos."
+      }
     },
     "sea": {
-      "header": { "eyebrow": "Sea transfers & yacht tours", "title": "From the dock.<br />Around the <em>Cyclades</em>.", "sub": "Private sea transfers, day charters and sunset cruises from Mykonos — to Delos, Rinia, the small Cyclades and beyond. Coordinated through trusted marine partners, on request; full crew and private chef available." },
-      "intro": { "eyebrow": "Sea transfers in Mykonos", "title": "Mykonos Sea Transfers<br />& <em>Luxury</em> Yacht Tours.", "lead": "A fifteen-minute crossing to Delos, a slow afternoon at the small Cyclades, or a multi-day route to Santorini — MPM orchestrates the boat, the crew, the provisioning and the land logistics on both ends. Charter from the Old Port, the New Port, or wherever your yacht is anchored." },
-      "row1": { "eyebrowSm": "Sunseeker 76 yacht · full crew", "title": "A boat fitted for the day, a crew fitted to the guest.", "body": "Our day-charter fleet is led by a Sunseeker 76 — ten guests, four cabins, three crew, fully insured for Greek and international waters. Onboard: shaded sun deck, dining for ten, a master cabin for changing, a tender for beach landings, and a fridge stocked to your preferences before you board.", "img": "/uploads/site/van-sea-yacht.jpg", "alt": "Sunseeker 76 yacht in Mykonos", "cta": "Plan a charter", "ctaPath": "/book?svc=sea" },
-      "bullets": ["Day charters: Delos · Rinia · Tinos · the small Cyclades", "Sunset cruises with private chef & sommelier on request", "Yacht meets at the Old Port, Tourlos, or your villa's anchor", "Captain, deckhand, fuel & refreshments included", "From €1,800 / half-day · custom multi-day on request", "Land-to-sea handover — chauffeur to tender, in a single booking"],
-      "routes": { "eyebrow": "Most requested routes", "title": "Where the boat<br /><em>actually</em> goes.", "lead": "Half-day, full-day and multi-day routes our captains know like the back of their hand. Every itinerary is customisable — swim stops, lunch venues, anchorages." },
-      "tiles": [
-        { "icon": "icon-yacht.svg", "title": "Delos & Rinia", "body": "Half-day charter to the sacred island of Delos and its quieter sister Rinia. UNESCO ruins, swim stops in turquoise coves, lunch at anchor. Half-day from €1,800." },
-        { "icon": "icon-star.svg", "title": "Sunset cruise", "body": "Out at golden hour, around the south coast, anchor for sunset off Paranga or Agrari. Private chef on board, sommelier on request, back to port by 11. From €2,400." },
-        { "icon": "icon-pin.svg", "title": "Small Cyclades day trip", "body": "A full day across to Schinoussa, Koufonisia and Iraklia — three island stops, three lunch options, one quiet boat home." },
-        { "icon": "icon-diamond.svg", "title": "Multi-day Cyclades", "body": "Tinos, Paros, Naxos, Antiparos and Santorini in two to five nights. Cabins, crew, route planning, ports and provisioning — all orchestrated by your concierge." }
+      "header": {
+        "eyebrow": "Upon Request · Through Partners",
+        "title": "Sea & Yacht<br /><em>Coordination</em> in Mykonos.",
+        "sub": "Selected sea transportation arrangements through trusted partners."
+      },
+      "body": [
+        "For guests who wish to travel by sea or include a private yacht experience in their stay, our team can assist with selected arrangements through trusted external partners.",
+        "Depending on the request and availability, this may include private sea transfers, yacht enquiries or transportation coordination between the accommodation, port and vessel.",
+        "Our role is to simplify communication and coordinate the ground transportation connected with the sea journey.",
+        "All sea and yacht services remain subject to partner availability, operating conditions and final confirmation."
       ],
-      "row2": { "eyebrowSm": "Land to sea, one booking", "title": "Chauffeur to the dock. Tender to the boat. No friction.", "p1": "Every sea booking is paired with a chauffeured transfer from your villa or hotel to the boarding point — the Old Port, the New Port at Tourlos, or a private anchorage with tender. Refreshments are stocked on board to your preferences, chefs and sommeliers arranged through our partners, and a return transfer waiting on the dock when you step off.", "p2": "Our concierge handles the harbour paperwork, the port fees, and the timing — you simply step on, and step off.", "img": "https://images.unsplash.com/photo-1604737637145-48cc31d160eb?w=1400&q=80", "alt": "Sunset cruise off Mykonos" },
-      "cta": { "eyebrow": "Plan a charter", "title": "Tell us the date, the <em>guests</em>, the route.", "primary": "Plan a charter", "primaryPath": "/book?svc=sea" }
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Private sea transfer enquiries",
+        "Yacht arrangement assistance",
+        "Port and marina transportation",
+        "Vehicle transfer to and from the vessel",
+        "Selected partner coordination",
+        "Custom requests considered upon availability",
+        "Ground and sea connection planning",
+        "Pricing provided on request"
+      ],
+      "cta": {
+        "eyebrow": "Upon request",
+        "title": "Your journey can continue <em>by sea</em>.",
+        "primary": "Request Sea or Yacht Coordination",
+        "primaryPath": "/book?svc=sea",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to enquire about sea or yacht coordination in Mykonos."
+      }
+    },
+    "air": {
+      "header": {
+        "eyebrow": "Upon Request · Through Partners",
+        "title": "Private Air & Helicopter<br /><em>Coordination</em>.",
+        "sub": "Selected aviation arrangements through trusted partners."
+      },
+      "body": [
+        "For guests travelling between Mykonos, Athens and other destinations, our team can assist with private aviation enquiries through selected external partners.",
+        "Depending on the request and availability, this may include helicopter transportation or private air arrangements.",
+        "We can also coordinate the ground transportation between the airport, helipad, hotel, villa or port, helping create a smoother connection between each stage of the journey.",
+        "All private aviation services remain subject to operator availability, weather conditions and final confirmation."
+      ],
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Helicopter transfer enquiries",
+        "Private aviation coordination",
+        "Connections between Mykonos and other destinations",
+        "Ground transfer to airports and helipads",
+        "Hotel and villa pickup coordination",
+        "Selected aviation partners",
+        "Custom travel arrangements",
+        "Pricing provided on request"
+      ],
+      "cta": {
+        "eyebrow": "Upon request",
+        "title": "Take the next part of your journey <em>by air</em>.",
+        "primary": "Request Private Air Coordination",
+        "primaryPath": "/book?svc=air",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to enquire about private air or helicopter coordination in Mykonos."
+      }
     },
     "security": {
-      "header": { "eyebrow": "VIP security & secure transport", "title": "Quiet, professional,<br /><em>cleared</em>.", "sub": "Personal protection officers, residential villa security, and secure transport in Mykonos. Vetted, multilingual, ex-military — arranged with trusted partners on request, for celebrity, corporate and diplomatic clientele." },
-      "intro": { "eyebrow": "VIP security in Mykonos", "title": "VIP Security &<br /><em>Secure</em> Transportation.", "lead": "Some guests arrive on the island already known. Others prefer to leave it that way. MPM provides discreet close protection, residential security and secure transport — a quiet, professional layer between you and everything else." },
-      "row1": { "eyebrowSm": "Vetted, multilingual, ex-military", "title": "The people you do not notice, until you need them.", "body": "Our protection officers are ex-military and former government close protection — vetted, NDA-signed, and trained in discreet operations. They speak English, Greek, French and Russian as standard, dress to blend with the setting (plain clothes by default, uniform on request) and operate to a single brief: anticipate, do not react.", "img": "https://images.unsplash.com/photo-1648413653877-ade5eefd2f1b?w=1400&q=80", "alt": "VIP security in Mykonos", "cta": "Speak in confidence", "ctaPath": "/contact" },
-      "bullets": ["Close protection officers (CPOs) — multilingual, ex-military, background-checked", "24-hour villa & perimeter security teams", "Secure transport in armoured vehicles on request", "Advance reconnaissance of venues, restaurants and beach clubs", "NDA-signed · discreet uniform or plain clothes", "Cleared for celebrity, corporate and diplomatic clientele · quoted by request"],
-      "verticals": { "eyebrow": "What we cover", "title": "Four areas, one<br /><em>operations</em> desk.", "lead": "Personal, residential, event and advance — every assignment is run by a single operations lead, with a 24-hour control desk on the island and a direct line to your concierge." },
-      "tiles": [
-        { "icon": "icon-shield.svg", "title": "Personal protection", "body": "One-to-one or team close protection through the duration of your stay — at the villa, on the way to dinner, inside the club, at the airport. Plain clothes by default, uniformed on request." },
-        { "icon": "icon-pin.svg", "title": "Villa & residential", "body": "Static guards and patrols at the villa, full perimeter security, CCTV review, and staff vetting. Particularly relevant for guests with public profiles, young families, or high-value assets on site." },
-        { "icon": "icon-star.svg", "title": "Event & wedding security", "body": "Guest-list management, discreet door staff, internal patrols, and coordination with venue security. We have run events at every major estate, hotel and beach club on the island." },
-        { "icon": "icon-clock.svg", "title": "Advance & reconnaissance", "body": "For high-sensitivity visits, our advance team surveys every venue, route and arrival point a week before the guest lands. Risk-assessed, briefed, and rehearsed." }
+      "header": {
+        "eyebrow": "Upon Request · Through Partners",
+        "title": "Private <em>Security</em><br />Assistance in Mykonos.",
+        "sub": "Discreet support for selected guests, residences and events."
+      },
+      "body": [
+        "For guests, private residences or events requiring additional security support, we can assist with selected arrangements through authorised professional partners.",
+        "The nature and level of the service are determined according to the client's requirements, schedule, location and individual circumstances.",
+        "Security assistance can be coordinated alongside private chauffeur transportation, helping create a more organised and discreet service plan.",
+        "All enquiries are handled confidentially and remain subject to partner availability and final assessment."
       ],
-      "row2": { "eyebrowSm": "Armoured & secure transport", "title": "Secure vehicles. Trained drivers. Pre-cleared routes.", "p1": "For sensitive movements we deploy armoured Mercedes-Benz vehicles paired with security-trained chauffeurs. Routes are surveyed in advance, alternates pre-cleared, and a chase vehicle deployed where the brief calls for it. Helicopter transfers from JMK direct to a villa helipad, where available, are arranged through our aviation partner.", "p2": "Every engagement begins with an off-record conversation with our principal. Pricing is provided after the brief is understood — never before.", "img": "/uploads/site/chauffeur-door.jpg", "alt": "Secure transportation in Mykonos" },
-      "cta": { "eyebrow": "Speak in confidence", "title": "A <em>private</em> conversation, first.", "primary": "Speak in confidence", "primaryPath": "/contact" }
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Personal security enquiries",
+        "Villa and residence support",
+        "Event security coordination",
+        "Chauffeur and security service planning",
+        "Authorised external partners",
+        "Confidential handling of enquiries",
+        "Services adapted to individual requirements",
+        "Availability confirmed on request"
+      ],
+      "cta": {
+        "eyebrow": "Upon request",
+        "title": "A <em>discreet conversation</em> comes first.",
+        "primary": "Request Security Assistance",
+        "primaryPath": "/book?svc=security",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to enquire about private security assistance in Mykonos."
+      }
+    },
+    "luggage": {
+      "header": {
+        "eyebrow": "Upon Request · Practical Support",
+        "title": "Luggage Transfer<br />& <em>Support</em> in Mykonos.",
+        "sub": "Practical assistance before check-in or after check-out."
+      },
+      "body": [
+        "Early arrivals, late departures and accommodation changes can create practical difficulties when travelling with luggage.",
+        "Depending on the request and availability, we can assist with luggage pickup, transportation, storage coordination or delivery between selected locations.",
+        "The service may be combined with an airport, port, hotel or villa transfer.",
+        "All arrangements must be confirmed in advance, including the number and approximate size of the items, pickup location, delivery point and required timing."
+      ],
+      "highlightsHeading": "Service Highlights",
+      "highlights": [
+        "Luggage pickup and delivery",
+        "Airport and port luggage support",
+        "Hotel and villa connections",
+        "Assistance before check-in or after check-out",
+        "Storage coordination where available",
+        "Service combined with private transportation",
+        "Advance confirmation required",
+        "Availability based on timing and capacity"
+      ],
+      "cta": {
+        "eyebrow": "Upon request",
+        "title": "Travel <em>lighter</em> through Mykonos.",
+        "primary": "Request Luggage Support",
+        "primaryPath": "/book?svc=luggage",
+        "whatsapp": "Contact Us on WhatsApp",
+        "whatsappMessage": "Hello, I would like to enquire about luggage transfer and support in Mykonos."
+      }
     }
   }
 }

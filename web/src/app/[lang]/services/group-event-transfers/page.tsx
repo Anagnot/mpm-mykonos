@@ -6,18 +6,18 @@ import { getDictionary, hasLocale } from "../../dictionaries";
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
   if (!hasLocale(lang)) return {};
-  const m = (await getDictionary(lang)).meta.luggage;
+  const m = (await getDictionary(lang)).meta.groupEvent;
   return { title: m.title, description: m.description };
 }
 
-export default async function LuggageStoragePage({ params }: { params: Promise<{ lang: string }> }) {
+export default async function GroupEventTransfersPage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!hasLocale(lang)) notFound();
-  const d = (await getDictionary(lang)).services.luggage;
+  const d = (await getDictionary(lang)).services.groupEvent;
   return (
     <LandingTransferLayout
       lang={lang}
-      bg="/uploads/fleet/vito-boot.jpg"
+      bg="/uploads/site/hero-group-event-transfers.jpg"
       header={d.header}
       body={d.body}
       highlightsHeading={d.highlightsHeading}

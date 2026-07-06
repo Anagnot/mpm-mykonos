@@ -11,6 +11,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return { title: m.title, description: m.description };
 }
 
+type OverviewItem = { id: string; path: string; icon: string; title: string; body: string; featured?: boolean };
+
 type Detail = {
   id: string;
   number: string;
@@ -82,8 +84,9 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
           </div>
 
           <div className="services-grid reveal-stagger" style={{ marginTop: "var(--space-lg)" }}>
-            {dict.overview.items.map((s) => (
-              <Link key={s.id} className="service-tile" href={L(s.path)}>
+            {(dict.overview.items as OverviewItem[]).map((s) => (
+              <Link key={s.id} className={`service-tile${s.featured ? " is-featured" : ""}`} href={L(s.path)}>
+                {s.featured && <span className="tile-badge">Signature</span>}
                 <img className="icon" src={`/assets/icons/${s.icon}`} alt="" />
                 <h3>{s.title}</h3>
                 <p>{s.body}</p>
