@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import ContactForm from "@/components/ContactForm";
+import TallyForm from "@/components/TallyForm";
 import { CtaStrip, Eyebrow, PageHeader, RichText, RuleGold } from "@/components/ui";
 import { getDictionary, hasLocale } from "../dictionaries";
 
@@ -26,7 +26,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         eyebrow={dict.header.eyebrow}
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
-        bg="/uploads/site/chauffeur-door.jpg"
+        bg="/uploads/site/hero-contact.jpg"
         minHeight="50vh"
       />
 
@@ -58,7 +58,13 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
               <RuleGold />
               <RichText as="h2" className="title-h2" html={dict.form.title} style={{ marginBottom: "var(--space-md)" }} />
               <p className="lead" style={{ marginBottom: "var(--space-md)" }}>{dict.form.lead}</p>
-              <ContactForm dict={dict.form} />
+              {/* Same Tally form as /book so requests actually reach the desk
+                  (the old native form was a visual stub). If a dedicated
+                  contact form is created in Tally, only this src changes. */}
+              <TallyForm
+                src="https://tally.so/embed/wgb1bP?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                title="Contact us"
+              />
             </div>
           </div>
         </div>

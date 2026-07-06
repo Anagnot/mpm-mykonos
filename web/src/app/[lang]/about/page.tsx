@@ -30,7 +30,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container">
           <div className="about-grid">
             <div className="img-stack">
-              <img className="a" src="/uploads/site/chauffeur-door.jpg" alt={dict.story.imgAlt1} />
+              <img className="a" src="/uploads/site/about-story.jpg" alt={dict.story.imgAlt1} />
               <img className="b" src="/uploads/site/van-interior.jpg" alt={dict.story.imgAlt2} />
             </div>
             <div>

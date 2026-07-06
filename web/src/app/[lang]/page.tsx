@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Eyebrow, RichText, RuleGold } from "@/components/ui";
 import { getDictionary, hasLocale } from "./dictionaries";
 
-const heroBg = "/uploads/site/chauffeur-door.jpg";
+const heroBg = "/uploads/site/hero-home.jpg";
 
 type ServiceTile = { id: string; path: string; icon: string; title: string; body: string; featured?: boolean };
 

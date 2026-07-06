@@ -17,7 +17,7 @@ export default async function AirportTransfersPage({ params }: { params: Promise
   return (
     <LandingTransferLayout
       lang={lang}
-      bg="/uploads/site/fleet-convoy.jpg"
+      bg="/uploads/site/hero-airport-transfers.jpg"
       header={d.header}
       body={d.body}
       highlightsHeading={d.highlightsHeading}

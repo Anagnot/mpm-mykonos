@@ -17,7 +17,7 @@ export default async function HotelVillaTransfersPage({ params }: { params: Prom
   return (
     <LandingTransferLayout
       lang={lang}
-      bg="/uploads/site/chauffeur-door.jpg"
+      bg="/uploads/site/hero-hotel-villa-transfers.jpg"
       header={d.header}
       body={d.body}
       highlightsHeading={d.highlightsHeading}

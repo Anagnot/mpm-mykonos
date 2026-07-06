@@ -47,7 +47,7 @@ export default function Footer({ lang, dict }: { lang: string; dict: FooterDict 
           <a href="tel:+306973564477">+30 6973 564477</a>
           <a href="https://wa.me/306973564477" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="viber://chat?number=%2B306973564477">Viber</a>
-          <a href="mailto:info@mykonospreciousmoments.com">info@mykonos...</a>
+          <a href="mailto:info@mykonospreciousmoments.com">info@mykonospreciousmoments.com</a>
           <Link href={localized("/about")}>{dict.aboutUs}</Link>
           <Link href={localized("/book")}>{dict.bookNow}</Link>
         </div>

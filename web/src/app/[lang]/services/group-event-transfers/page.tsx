@@ -17,7 +17,7 @@ export default async function GroupEventTransfersPage({ params }: { params: Prom
   return (
     <LandingTransferLayout
       lang={lang}
-      bg="/uploads/site/van-fleet-row.jpg"
+      bg="/uploads/site/hero-group-event-transfers.jpg"
       header={d.header}
       body={d.body}
       highlightsHeading={d.highlightsHeading}
