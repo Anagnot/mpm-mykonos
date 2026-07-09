@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 export const RuleGold = ({ center }: { center?: boolean }) => (
   <span className={`rule-gold${center ? " center" : ""}`} />
@@ -62,17 +62,31 @@ export function PageHeader({
   titleHtml,
   subHtml,
   bg,
+  bgPosition,
   minHeight,
 }: {
   eyebrow: string;
   titleHtml: string;
   subHtml?: string;
   bg: string;
+  /** Focal point of the banner (CSS background-position) so the subject
+      survives the cover-crop, especially on mobile. Defaults to center. */
+  bgPosition?: string;
   minHeight?: string;
 }) {
+  // minHeight feeds the --ph-min variable instead of an inline min-height so
+  // the stylesheet stays in charge: desktop adds the +140px banner boost and
+  // the mobile media query can still shrink the header (an inline min-height
+  // would override it and crop wide banners even harder on phones).
   return (
-    <section className="page-header" style={minHeight ? { minHeight } : undefined}>
-      <div className="bg" style={{ backgroundImage: `url('${bg}')` }} />
+    <section
+      className="page-header"
+      style={minHeight ? ({ "--ph-min": minHeight } as CSSProperties) : undefined}
+    >
+      <div
+        className="bg"
+        style={{ backgroundImage: `url('${bg}')`, ...(bgPosition ? { backgroundPosition: bgPosition } : {}) }}
+      />
       <div className="scrim" />
       <div className="content">
         <Eyebrow>{eyebrow}</Eyebrow>

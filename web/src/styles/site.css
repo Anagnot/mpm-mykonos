@@ -411,7 +411,10 @@ html[lang="en"] { --header-h: 112px; }
 }
 .hero .bg {
   position: absolute; inset: 0;
-  background-size: cover; background-position: center;
+  background-size: cover;
+  /* Anchor low: the van sits in the lower half of the square banner, so a
+     plain center crop shaves its wheels on wide viewports. */
+  background-position: center 85%;
   transform: scale(1.04);
 }
 .hero .scrim {
@@ -443,10 +446,13 @@ html[lang="en"] { --header-h: 112px; }
 }
 .hero .scroll-hint::after { content: ''; width: 1px; height: 36px; background: var(--color-gold); }
 
-/* page header (shorter than hero, for sub-pages) */
+/* page header (shorter than hero, for sub-pages).
+   --ph-min is set per page by PageHeader; the +140px shows more of the
+   banner photos on desktop. The mobile query below overrides the whole
+   min-height so phones aren't forced into an over-tall, over-cropped hero. */
 .page-header {
   position: relative;
-  min-height: 60vh;
+  min-height: calc(var(--ph-min, 60vh) + 140px);
   display: flex; align-items: flex-end;
   background: var(--bg-deep);
   color: var(--fg-inverse);
@@ -933,8 +939,10 @@ html[lang="en"] { --header-h: 112px; }
   .spec-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid, .contact-grid { grid-template-columns: 1fr; }
   .cta-strip .inner { grid-template-columns: 1fr; align-items: start; }
-  .hero { min-height: 90vh; }
-  .page-header { min-height: 50vh; padding-top: calc(var(--header-h) + 28px); }
+  /* Shorter heroes on phones: a portrait container over-crops the wide
+     banner photos, so less height = more of the image actually visible. */
+  .hero { min-height: 74vh; }
+  .page-header { min-height: 44vh; padding-top: calc(var(--header-h) + 28px); }
 }
 
 /* mobile dropdown (turned into a stacked menu within open dropdown) */

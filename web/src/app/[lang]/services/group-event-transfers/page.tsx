@@ -18,6 +18,7 @@ export default async function GroupEventTransfersPage({ params }: { params: Prom
     <LandingTransferLayout
       lang={lang}
       bg="/uploads/site/hero-group-event-transfers.jpg"
+      bgPosition="35% 30%"
       header={d.header}
       body={d.body}
       highlightsHeading={d.highlightsHeading}

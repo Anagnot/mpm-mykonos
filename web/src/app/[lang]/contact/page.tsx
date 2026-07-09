@@ -27,6 +27,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
         bg="/uploads/site/hero-contact.jpg"
+        bgPosition="30% 25%"
         minHeight="50vh"
       />
 

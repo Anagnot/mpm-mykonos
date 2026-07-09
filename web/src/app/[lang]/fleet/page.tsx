@@ -67,6 +67,7 @@ export default async function FleetPage({ params }: { params: Promise<{ lang: st
         titleHtml={dict.header.title}
         subHtml={dict.header.sub}
         bg="/uploads/site/hero-fleet.jpg"
+        bgPosition="center 60%"
       />
 
       <section className="section reveal">

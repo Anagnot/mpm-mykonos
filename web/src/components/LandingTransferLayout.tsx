@@ -22,6 +22,7 @@ export type LandingCta = {
 export default function LandingTransferLayout({
   lang,
   bg,
+  bgPosition,
   header,
   body,
   highlightsHeading,
@@ -31,6 +32,7 @@ export default function LandingTransferLayout({
 }: {
   lang: string;
   bg: string;
+  bgPosition?: string;
   header: LandingHeader;
   body: string[];
   highlightsHeading: string;
@@ -48,6 +50,7 @@ export default function LandingTransferLayout({
         titleHtml={header.title}
         subHtml={header.sub}
         bg={bg}
+        bgPosition={bgPosition}
         minHeight="60vh"
       />
 
